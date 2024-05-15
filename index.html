@@ -1,200 +1,143 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <title>Leo Robert's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Onest:wght@100..900&display=swap" rel="stylesheet">
-
-  </head>
-</html>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+</head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="navbar__left">
-      <p class="navbar__left__link"><strong>LE☺︎ R☺︎BERTS</strong></p>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar__left">
+            <p class="navbar__left__link"><strong>LE☺︎ R☺︎BERTS</strong></p>
+        </div>
+        <div class="navbar__right">
+            <ul class="navbar__right__list">
+                <li><a href="https://www.linkedin.com/in/leoroberts21" target="_blank">LinkedIn</a></li>
+                <li><a href="#footer">Let's Chat</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr class="navbar__hr" />
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero__left">
+            <h1 class="hero__left__h1">
+                Junior Web Designer/Developer with a passion for crafting visually stunning and functional websites.
+            </h1>
+            <p class="hero__left_content">
+                With a 1st Class Honours in Graphic Design and a year's experience working as a Designer/Developer in a digital agency, I am proficient in HTML, CSS, and JavaScript, with hands-on experience in CMS systems. I enjoy blending creativity with logic to deliver seamless user experiences and am committed to continuous learning and growth in the field.
+            </p>
+            <a href="#footer"><button class="button--primary">Contact Me</button></a>
+        </div>
+        <div class="hero__right">
+            <img src="/images/oxford Dining v2 copy.jpg" alt="A dining experience" />
+        </div>
+    </section>
+
+    <!-- GRID -->
+    <hr class="grid__hr" />
+    <p><a href="#project__grid">Recent Projects ↓</a></p>
+    <section id="project__grid" class="grid__container">
+        <div class="grid__item">
+            <img class="grid__item__img" src="/images/Be-Brilliant-v2.jpg" alt="Be Brilliant project" />
+            <div class="grid__item__flex">
+                <a href="#"><h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3></a>
+                <a href="#"><p class="grid__item__p">Design project for blah blah design project for blah blah</p></a>
+            </div>
+        </div>
+        <div class="grid__item">
+          <img class="grid__item__img" src="/images/Be-Brilliant-v2.jpg" alt="Be Brilliant project" />
+          <div class="grid__item__flex">
+              <a href="#"><h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3></a>
+              <a href="#"><p class="grid__item__p">Design project for blah blah design project for blah blah</p></a>
+          </div>
+      </div>
+      <div class="grid__item">
+        <img class="grid__item__img" src="/images/Be-Brilliant-v2.jpg" alt="Be Brilliant project" />
+        <div class="grid__item__flex">
+            <a href="#"><h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3></a>
+            <a href="#"><p class="grid__item__p">Design project for blah blah design project for blah blah</p></a>
+        </div>
     </div>
-
-    <div class="navbar__right">
-      <ul class="navbar__right__list">
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Digital CV</a></li>
-        <li><a href="#">Linkedin</a></li>
-        <li><a href="#">Let's Chat</a></li>
-      </ul>
-    </div>
-  </nav>
-  <hr class="navbar__hr" />
-
-  <!-- HERO -->
-
-  <div class="hero">
-    <div class="hero__left">
-      <h1 class="hero__left__h1">
-         Junior Web Designer/Developer with a passion for crafting visually
-        stunning and functional websites.
-      </h1>
-
-      <p class="hero__left_content">
-        With a 1st Class Honours in Graphic Design and a year's experience
-        working as a Designer/Developer in a digital agency, I am proficient in HTML, CSS, and
-        JavaScript, with hands-on experience in CMS systems. I enjoy blending
-        creativity with logic to deliver seamless user experiences and am
-        committed to continuous learning and growth in the field. 
-      </p>
-
-      <a href="#footer"><button class="button--primary">contact me</button></a>
-    </div>
-
-    <div class="hero__right">
-      <img src="/images/oxford Dining v2 copy.jpg" alt="..." />
-    </div>
+    <div class="grid__item">
+      <img class="grid__item__img" src="/images/Be-Brilliant-v2.jpg" alt="Be Brilliant project" />
+      <div class="grid__item__flex">
+          <a href="#"><h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3></a>
+          <a href="#"><p class="grid__item__p">Design project for blah blah design project for blah blah</p></a>
+      </div>
   </div>
-
-  <!-- GRID -->
-
-  <hr class="grid__hr" />
-
-  <h2 class="hr__h2">Recent Projects ↓</h2>
-
-  <div class="grid__container">
-    <div class="grid__item">
-      <img
-        class="grid__item__img"
-        src="/images/Be-Brilliant-v2.jpg"
-        alt="..."
-      />
-      <span class="grid__item__flex">
-        <h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3>
-        <p class="grid__item__p">Design project for blah blah design project for blah blah </p>
-      </span>
+  <div class="grid__item">
+    <img class="grid__item__img" src="/images/Be-Brilliant-v2.jpg" alt="Be Brilliant project" />
+    <div class="grid__item__flex">
+        <a href="#"><h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3></a>
+        <a href="#"><p class="grid__item__p">Design project for blah blah design project for blah blah</p></a>
     </div>
-    <div class="grid__item">
-      <img
-        class="grid__item__img"
-        src="/images/cotswolds Fine Dining - v1.jpg"
-        alt="..."
-      />
-      <span class="grid__item__flex">
-        <h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3>
-        <p class="grid__item__p">Design project for blah blah design project for blah blah </p>
-      </span>
-
-    </div>
-    <div class="grid__item">
-      <img class="grid__item__img" src="/images/Cvr-v2.jpg" alt="..." />
-      <span class="grid__item__flex">
-        <h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3>
-        <p class="grid__item__p">Design project for blah blah design project for blah blah </p>
-      </span>
-    </div>
-    <div class="grid__item">
-      <img
-        class="grid__item__img"
-        src="/images/oxford Dining v2 copy.jpg"
-        alt="..."
-      />
-      <span class="grid__item__flex">
-        <h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3>
-        <p class="grid__item__p">Design project for blah blah design project for blah blah </p>
-      </span>
-    </div>
-    <div class="grid__item">
-      <img
-        class="grid__item__img"
-        src="/images/Streamlined Analytics - v1.jpg"
-        alt="..."
-      />
-      <span class="grid__item__flex">
-        <h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3>
-        <p class="grid__item__p">Design project for blah blah design project for blah blah </p>
-      </span>
-    </div>
-    <div class="grid__item">
-      <img
-        class="grid__item__img"
-        src="/images/Streamlined Analytics v2.jpg"
-        alt="..."
-      />
-      <span class="grid__item__flex">
-        <h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3>
-        <p class="grid__item__p">Design project for blah blah design project for blah blah </p>
-      </span>
-    </div>
+</div>
+<div class="grid__item">
+  <img class="grid__item__img" src="/images/Be-Brilliant-v2.jpg" alt="Be Brilliant project" />
+  <div class="grid__item__flex">
+      <a href="#"><h3 class="grid__item__h3">Cotswolds Vehicle Recovery</h3></a>
+      <a href="#"><p class="grid__item__p">Design project for blah blah design project for blah blah</p></a>
   </div>
+</div>
+    </section>
 
+    <!-- ABOUT -->
+    <footer>
+        <hr class="footer__hr" />
+        <img src="./images/2078d8404fb323cc72141eac2887cdc5-man-yellow-shirt-uses-computer-at-desk _l.jpg" class="footer__intro" alt="Leo Roberts working" />
+        <h2 id="footer" class="hero__left__h1 footer-h2">
+            Open to work in this sector working on these things with a focus on these things etc. Open to work in this sector working on these things with a focus on these things etc.
+        </h2>
+        <hr class="footer__hr__about" />
+        <div class="footer__row">
+            <div class="footer__row__left">
+                <p class="hr__h2">Relevant Experience</p>
+            </div>
+            <div class="footer__row__right">
+                <p><b>Beyond Your Brand</b><br />Junior Web Designer/Developer<br /><span class="text--meta">2023 - Present</span></p>
+            </div>
+        </div>
+        <hr class="footer__hr__about" />
+        <div class="footer__row">
+            <div class="footer__row__left">
+                <p class="hr__h2">Education</p>
+            </div>
+            <div class="footer__row__right">
+                <p><b>Nottingham Trent University</b><br />Graphic Design, BA (Hons), 1st Class Honours<br /><span class="text--meta">2019 - 2022</span></p>
+                <p><b>Hertford Regional College</b><br />Graphic Design, Level 3 Diploma, Distinction<br /><span class="text--meta">2017 - 2019</span></p>
+            </div>
+        </div>
+        <hr class="footer__hr__about" />
+        <div class="footer__row">
+            <div class="footer__row__left">
+                <p class="hr__h2">Contact Me</p>
+            </div>
+            <div class="footer__row__right">
+                <p><a href="mailto:leoj.roberts21@gmail.com">leoj.roberts21@gmail.com</a></p>
+                <p><a href="tel:07539488923">07539488923</a></p>
+                <p><a href="https://www.linkedin.com/in/leoroberts21" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+        <hr class="footer__hr__about" />
+        <div class="footer__row footer__row__meta">
+            <div class="footer__row__left">
+                <p>☺︎ Leo Roberts 2024</p>
+            </div>
+            <div class="footer__row__right">
+                <p><a href="#navbar">Back to Top ↑</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
-
-  <!-- ABOUT -->
-
-  <footer id="footer">
-
-
-    <hr class="grid__hr__about" />
-    <img src="./images/2078d8404fb323cc72141eac2887cdc5-man-yellow-shirt-uses-computer-at-desk _l.jpg" style="width: 200px; margin-top: 40px; border-radius: 7px">
-    <h2 class="hero__left__h1">
-      Open to work in this sector working on these things with a focus on these things etc.Open to work in this sector working on these things with a focus on these things etc.
-    </h2>
-
-
-  <hr class="grid__hr__about" />
-
-  <span class="grid__row">
-
-    <span class="grid__row__left">
-  <p class="hr__h2">Relevant Experience</p>
-</span>
-
-<span class="grid__row__right">
-  <p><b>Beyond Your Brand</b><br />junior Web Designer/Developer<br /><span class="text--meta">2023 - Present</span></p>
-</span>
-
-</span>
-
-  <hr class="grid__hr__about" />
-
-<span class="grid__row">
-    
-  <span class="grid__row__left">
-<p class="hr__h2">Education</p>
-</span>
-
-<span class="grid__row__right">
-  <p><b>Nottingham Trent University</b><br />Graphic Design,
-    BA (Hons), 1st Class Honours<br /><span class="text--meta">2019 - 2022</span></p>
-  <p><b>Hertford Regional College</b><br />Graphic Design,
-    Level 3 Diploma, Distinction<br /><span class="text--meta">2017 - 2019</span></p>
-</span>
-
-</span>
-
-<hr class="grid__hr__about" />
-
-<span class="grid__row">
-    
-  <span class="grid__row__left">
-<p class="hr__h2">Contact Me</p>
-</span>
-
-<span class="grid__row__right">
-  <p><a href="#">☞ leoj.roberts21@gmail.com</a></p>
-  <p><a href="#">☞ 07539488923</a></p>
-  <p><a href="#">☞ Linkedin</a></p>
-</span>
-
-
-</footer>
-
-<hr class="grid__hr__about" />
-<span class="grid__row grid__row__meta">
-  <span  class="grid__row__left">
-<p>☺︎ Leo Roberts 2024</p>
-</span>
-<span lass="grid__row__right">
-  <p>Enjoy your Day</p>
-</span>
+</html>
