@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const handleScroll = () => {
       gridItems.forEach((item) => {
           if (isInViewport(item)) {
-              item.classList.add('fade-in--visible');
+              item.classList.add('fade-in-visible');
           }
       });
   };
