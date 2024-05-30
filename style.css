@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  margin-left: 4vw;
-  margin-right: 4vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   font-family: "manrope";
   letter-spacing: 0.3px;
   margin-bottom: 0px;
@@ -36,6 +36,25 @@ li:hover {
 font-weight: 600;
 }
 
+/* spacing */
+
+.margin-top-default {
+  margin-top: 3rem;
+}
+
+.padding-top-default {
+  padding-top: 3rem;
+}
+
+.padding-bottom-default {
+  padding-bottom: 3rem;
+}
+
+.margin-top-small {
+  margin-top: 1rem;
+}
+
+
 /* Buttons */
 .button-primary {
   transition: all 200ms ease-out;
@@ -44,7 +63,7 @@ font-weight: 600;
   border: 2px solid #222222;
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   background-color: #222222;
 }
@@ -60,7 +79,7 @@ font-weight: 600;
 
 .lead-text {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 3.5vh;
   max-width: 40vw;
@@ -68,33 +87,33 @@ font-weight: 600;
 
 .text-meta {
   color: #222222;
-  font-size: 14px;
+  font-size: 0.9rem;
   opacity: 30%;
   padding-bottom: 1vh;
 }
 
 .h1 {
   font-weight: 600;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   line-height: 1.3;
   margin-bottom: 2vh;
 }
 
 .h2 {
   font-weight: 600;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   line-height: 1.3;
 }
 
 
 .h3 {
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 0px;
 }
 
 .h4 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -116,7 +135,7 @@ font-weight: 600;
 .navbar-right-list {
   list-style-type: none;
   display: flex;
-  gap: 2.5vw;
+  gap: 2.5rem;
 }
 
 .navbar-right-list li a {
@@ -130,21 +149,14 @@ hr {
   border-bottom: none;
 }
 
-.grid_hr-about {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
-.footer-responsive-hr {
+.hide{
   display: none;
 }
 
 /* Hero Section */
 .hero {
   display: flex;
-  gap: 5vw;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  gap: 5rem;
 }
 
 .hero-left,
@@ -156,10 +168,9 @@ hr {
 /* Grid */
 
 .grid-container {
-  padding-top: 5vh;
   display: grid;
-  column-gap: 4vw;
-  row-gap: 4vh;
+  column-gap: 3rem;
+  row-gap: 3rem;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -169,7 +180,7 @@ hr {
 
 .grid-item-img {
   min-width: 100%;
-  height: 50vh;
+  height: 30rem;
   object-fit: cover;
   object-position: top;
   border-radius: 7px;
@@ -189,11 +200,11 @@ hr {
 }
 
 .grid-item-text{
-  padding-top: 1vh;
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 0px;
+  padding-bottom: 0rem;
 }
 
 .grid-container a:hover {
@@ -202,28 +213,23 @@ hr {
 
 /* Footer */
 
-.footer-hr {
-  margin-top: 5vh; /* CHANGE THIS!!! */
-  margin-bottom: 0vh;
-}
-
 .self-img {
-  width: 15vw;
-  margin-top: 10vh;
+  width: 13rem;
+  margin-top: 3rem;
   border-radius: 7px;
   object-fit: cover;
-  height: 25vh;
+  height: 13rem;
 }
 
 .footer-intro { 
-  margin-bottom: 5vh;
+  margin-bottom: 3rem;
   max-width: 80vw;
 }
 
 
 .row-layout {
   display: flex;
-  gap: 2vw;
+  gap: 2rem;
 }
 
 .row-left {
@@ -232,15 +238,12 @@ hr {
 
 .row-right {
   text-align: left;
-  line-height: 3vh;
+  line-height: 1.7rem;
   max-width: 50%; 
   word-wrap: break-word;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 
-footer {
-  margin-top: 2vh;
-}
 
 /* Scroll Animations */
 .fade-in {
@@ -266,7 +269,7 @@ footer {
   -webkit-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
-  animation: giffy 10s infinite steps(1);}
+  animation: giffy 15s infinite steps(1);}
 
 #hero-gif:hover {
 	animation-play-state:paused;
@@ -306,29 +309,29 @@ footer {
 @media (min-width: 1600px){
 
   p, .navbar, .h4 {
-    font-size: 18px;
+    font-size: 1.12rem;
   }
 
   .text-meta p{
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .h3 {
-    font-size: 26px;
+    font-size: 1.62rem;
     }
 
 .h1, .h2 {
-font-size: 2.75em;
+font-size: 2.75rem;
 }
 
 .lead-text {
-  font-size: 18px;
+  font-size: 1.12rem;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .grid-item-img {
-    height: 43vh;
+    height: 25rem;
   }
 }
 
@@ -340,7 +343,7 @@ font-size: 2.75em;
   }
 
   .h1 {
-    margin-top: 0vh;
+    margin-top: 0rem;
     font-size: 2em;
   }
 
@@ -357,7 +360,7 @@ font-size: 2.75em;
   }
   
   .grid-item-img {
-    height: 36vh;
+    height: 20rem;
   }
 
   .h2 {
@@ -365,12 +368,13 @@ font-size: 2.75em;
   }
 
   .self-img {
-    width: 19vw;
+    width: 12rem;
+    height: 12rem;
   }
 
   .text-muted {
     line-height: 1.6;
-    margin-top: 1.4vh;
+    margin-top: 0.75rem;
   }
 }
 
@@ -382,7 +386,7 @@ font-size: 2.75em;
   }
   
   .h1 {
-    margin-top: 0vh;
+    margin-top: 0rem;
     font-size: 2em;
   }
 
@@ -405,26 +409,27 @@ font-size: 2.75em;
   */
 
   .hero-right img {
-    max-height: 50vh;
+    max-height: 30rem;
   }
 
   .grid-container {
-    padding-top: 3vh;
-    row-gap: 3vh;
-    column-gap: 5vw;
+    padding-top: 1.5rem;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
   }
 
   .grid-item-img {
-    height: 29vh;
+    height: 13rem;
   }
 
-  .footer-hr {
-    margin-top: 2vh;
+  .margin-top-default {
+    margin-top: 2.5rem;
   }
 
   .self-img {
-    width: 30vw;
-    margin-top: 8vh;
+    width: 12rem;
+    height: 12rem;
+    margin-top: 2.5rem;
   }
 
   .h2 {
@@ -438,7 +443,7 @@ font-size: 2.75em;
 
   .row-right {
     text-align: left;
-    line-height: 3vh;
+    line-height: 1.7rem;
   }
 }
 
@@ -449,13 +454,13 @@ font-size: 2.75em;
   }
 
 .navbar-left {
-  font-size: 30px;
-  height: 75px;
+  font-size: 1.87rem;
+  height: 4.5rem;
 }
   
   .navbar-right-list {
-padding-left: 0px;
-gap: 10vw;
+padding-left: 0rem;
+gap: 2.5rem;
   }
   
   .navbar-right-list li a {
@@ -468,7 +473,7 @@ gap: 10vw;
   }
 
   .h1 {
-    margin-top: 0vh;
+    margin-top: 0rem;
     font-size: 1.7em;
   }
 
@@ -490,30 +495,31 @@ gap: 10vw;
   }
   */
 
-  .hero-right img {
-    max-height: 30vh;
+  .hero-right img {  /* SORT THIS !!!!!!!*/
+    max-height: 5vh;
   }
 
   .grid-item-img {
-    height: 35vh;
+    height: 14rem;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
   }
 
-  .footer-hr {
-    margin-top: 1vh;
+  .margin-top-default {
+    margin-top: 1.5rem;
   }
   
   .self-img {
     width: 100%;
-    margin-top: 7vh;
+    height: auto;
+    margin-top: 1.5rem;
   }
 
   .h2 {
     max-width: 100%;
-    font-size: 1.7em;
+    font-size: 1.7rem;
   }
 
   .row-left {
@@ -521,20 +527,35 @@ gap: 10vw;
   }
   .row-layout {
     flex-direction: column;
+    gap: 0rem;
   }
 
   .h4 {
-    margin-bottom: 0px;
-      font-size: 22px;
+    margin-bottom: 0rem;
+      font-size: 1.37rem;
       font-weight: 400;
-      margin-bottom: 0px;
+      margin-bottom: 0rem;
   }
 
-  .footer-hr-about {
+  .smallest-screen-hide {
 display: none;
-  
   }
-  .footer-responsive-hr {
+
+  .hide {
   display: block;
   }
+
+  .row-right {
+    text-align: left;
+    line-height: 1.7rem;
+    max-width: 100%; 
+    word-wrap: break-word;
+    /* word-break: break-all; */
+  }
 }
+
+
+/* List: 
+
+- create small-margin, medium margin classes etc.
+- project page responsoive
