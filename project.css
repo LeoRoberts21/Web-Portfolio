@@ -1,16 +1,16 @@
 
-#p-body footer{
-padding-top: 10vh;
-}
-
 .p-hero-right {
   width: 100%;
   align-self: center;
 }
 
 .p-hero-left {
-  width: 80%;
+  width: 75%;
   align-self: center;
+}
+.project-description {
+width: 70%;
+align-self: center;
 }
 
 .project-mockups {
@@ -25,6 +25,18 @@ padding-top: 10vh;
   flex-direction: column;
   text-align: center;
 }
+
+.p-desc-row-left {
+  width: 50%;
+}
+
+.p-desc-row-right {
+  text-align: left;
+  line-height: 1.7rem;
+  width: 50%; 
+  word-wrap: break-word;
+}
+
 
 
 /* project grid */
@@ -65,5 +77,73 @@ padding-top: 10vh;
 
 .triple {
   grid-template-columns: 1fr 1fr 1fr;
-
 }
+
+.p-grid-btns {
+  display: flex;
+justify-content: center;
+gap: 1.25rem;
+}
+
+/* responsive */
+
+@media (min-width: 960px) and (max-width: 1199px) {
+.project-mockups {
+  width: 90%;
+}
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .project-mockups {
+    width: 100%;
+  }
+
+  .p-project-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .p-row-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .single {
+    grid-template-columns: 1fr;
+  }
+  }
+
+  @media  (max-width: 639px) {
+    .project-mockups {
+      width: 100%;
+    }
+
+    .project-description {
+      text-align: center;
+      width: 100%;
+    }
+
+    .p-desc-row-left{
+      text-align: center;
+      width: 100%;
+    }
+
+    .p-desc-row-left {
+
+      text-align: center;
+      width: 100%;
+    }
+
+    .p-hero-left,
+    .p-hero-right {
+      width: 100%;
+    }
+
+    .p-row-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    }

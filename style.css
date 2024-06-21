@@ -4,8 +4,8 @@
 
 /* General Elements */
 ::selection {
-  color: rgb(255, 255, 255);
-  background: #222222;
+  color: #e45e40;
+  background: #ffffff;
 }
 
 html {
@@ -13,27 +13,39 @@ html {
 }
 
 body {
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin: 0px;
   font-family: "manrope";
   letter-spacing: 0.3px;
   margin-bottom: 0px;
 }
 
+.container {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
 a {
   color: black;
   text-decoration: none;
+  transition: all 150ms ease-out;
 }
 
 a:hover {
-  opacity: 60%;
+  color: #e45e40;
 }
 
 li:hover {
-  opacity: 60%;
+  color: #e45e40;
 }
+
 .bold {
 font-weight: 600;
+}
+
+.section-muted {
+  background-color: #f9f9f9;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 /* spacing */
@@ -42,9 +54,22 @@ font-weight: 600;
   margin-top: 3rem;
 }
 
+.margin-top-large {
+  margin-top: 4rem;
+}
+
+.margin-bottom-large {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-default {
+  margin-bottom: 3rem;
+}
+
 .padding-top-default {
   padding-top: 3rem;
 }
+
 
 .padding-bottom-default {
   padding-bottom: 3rem;
@@ -75,6 +100,23 @@ font-weight: 600;
   cursor: pointer;
 }
 
+.button-secondary {
+  transition: all 200ms ease-out;
+  padding: 13px 23px;
+  border-radius: 100px;
+  border: 2px solid #222222;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #222222;
+  background-color: #22222200;
+}
+
+.button-secondary:hover {
+opacity: 40%;
+  cursor: pointer;
+}
+
 /* Text */
 
 .lead-text {
@@ -82,7 +124,6 @@ font-weight: 600;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 3.5vh;
-  max-width: 40vw;
 }
 
 .text-meta {
@@ -96,7 +137,7 @@ font-weight: 600;
   font-weight: 600;
   font-size: 2.25rem;
   line-height: 1.3;
-  margin-bottom: 2vh;
+  margin-bottom: 1.5rem;
 }
 
 .h2 {
@@ -130,6 +171,7 @@ font-weight: 600;
   justify-content: space-between;
   align-items: center;
   font-family: "manrope";
+  height: 5rem;
 }
 
 .navbar-right-list {
@@ -147,6 +189,10 @@ font-weight: 600;
 hr {
   border-top: 1px solid rgb(229, 229, 229);
   border-bottom: none;
+}
+
+.nav-hr {
+  margin-top: 0px;
 }
 
 .hide{
@@ -211,11 +257,44 @@ hr {
   opacity: 100%;
 }
 
+/* cta */
+
+.cta {
+  transition: all 500ms ease-out;
+  text-align: center; 
+}
+
+.cta:hover {
+  color: #2b2b2b18;
+  cursor: pointer;
+}
+.cta-links {
+  transition: all 200ms ease-out;
+}
+
+/*
+.cta-links-bold {
+  font-weight: 400;
+  }
+*/
+.muted-inner {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.cta .muted-inner {
+  padding-top: 5rem; padding-bottom: 5rem;
+}
+
+.muted-inner .h1 {
+  margin-top:16px;
+  margin-bottom: 16px;
+}
+
 /* Footer */
 
 .self-img {
   width: 13rem;
-  margin-top: 3rem;
   border-radius: 7px;
   object-fit: cover;
   height: 13rem;
@@ -470,6 +549,7 @@ gap: 2.5rem;
   .hero {
     flex-direction: column;
     text-align: center;
+    gap: 3rem;
   }
 
   .h1 {
@@ -486,6 +566,9 @@ gap: 2.5rem;
     width: 100%;
   }
 
+  #hero-gif {
+    height: 40vh;
+  }
   /*
   .hero-left {
     order: 2;
@@ -494,10 +577,6 @@ gap: 2.5rem;
     order: 1;
   }
   */
-
-  .hero-right img {  /* SORT THIS !!!!!!!*/
-    max-height: 5vh;
-  }
 
   .grid-item-img {
     height: 14rem;
@@ -556,6 +635,13 @@ display: none;
 
 
 /* List: 
+- project page responsoive *(more or less, grid might need changing
+- fix home gird images < 640 * think it's fine?
+- fix the height of hero right gif on responsive *
 
-- create small-margin, medium margin classes etc.
-- project page responsoive
+- Have a gallery page of all projects!! project archive?
+- organise what projects to include
+- create all pages and put baseline info in them
+- go through each page one by one with copy and images 
+- choose fonts and create logo 
+- put it live + link domain */
