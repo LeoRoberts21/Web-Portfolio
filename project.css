@@ -14,7 +14,7 @@ align-self: center;
 }
 
 .project-mockups {
-  width: 80%;
+  width: 75%;
 }
 
 .p-hero {
@@ -37,8 +37,6 @@ align-self: center;
   word-wrap: break-word;
 }
 
-
-
 /* project grid */
 
 .p-project-grid{
@@ -58,21 +56,22 @@ align-self: center;
   height: 30rem;
   object-fit: cover;
   object-position: top;
-  border-radius: 7px;
+  border-radius: 2px;
+  /*
   -webkit-box-shadow: 0px 12px 29px -19px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 12px 19px -19px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 12px 29px -19px rgba(0, 0, 0, 0.33);
+  */
   transition: all 200ms ease-out;
   border: 0px solid #fff;
 }
 
 .single {
-  height: 30rem;
   grid-template-columns: 1fr;
 }
 
 .single-img {
-  height:30rem;
+  height: 100%;
 }
 
 .triple {
@@ -83,6 +82,25 @@ align-self: center;
   display: flex;
 justify-content: center;
 gap: 1.25rem;
+}
+
+/* ANIMATION */
+
+#dine-gif {
+ height: 69vh;
+  border-radius: 2px;
+  background-size: 75%; 
+  background-position: center;
+  animation: pgiffy 5s infinite steps(1);
+  background-repeat: no-repeat;
+}
+
+@keyframes pgiffy {
+  0%   { background-image: url('mockups/cfd-laptop.png'); } 
+  25%   { background-image: url('mockups/ofd-laptop.png'); } 
+  50%   { background-image: url('mockups/cfd-laptop.png'); } 
+  75%   { background-image: url('mockups/ofd-laptop.png'); } 
+  100%   { background-image: url('mockups/cfd-laptop.png'); } 
 }
 
 /* responsive */

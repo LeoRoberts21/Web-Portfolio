@@ -229,10 +229,12 @@ hr {
   height: 30rem;
   object-fit: cover;
   object-position: top;
-  border-radius: 7px;
+  border-radius: 2px;
+  /*
   -webkit-box-shadow: 0px 12px 29px -19px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 12px 19px -19px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 12px 29px -19px rgba(0, 0, 0, 0.33);
+  */
   cursor: pointer;
   transition: all 200ms ease-out;
   border: 0px solid #fff;
@@ -295,7 +297,7 @@ hr {
 
 .self-img {
   width: 13rem;
-  border-radius: 7px;
+  border-radius: 2px;
   object-fit: cover;
   height: 13rem;
 }
@@ -342,7 +344,7 @@ hr {
   min-width: 100%;
   max-width: 100%;
   height: 69vh;
-  border-radius: 7px;
+  border-radius: 2px;
   background-size: cover;
   background-position: top; 
   -webkit-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
@@ -357,6 +359,7 @@ hr {
   box-shadow: 0px 18px 29px -19px rgba(0, 0, 0, 0.33);
   transform: scale(1.01);
 }
+
 
 @keyframes giffy {
 
@@ -382,6 +385,7 @@ hr {
   95%  { background-image: url('hero-gif/frame-20.png'); }
   100%  { background-image: url('hero-gif/frame-1.png'); }
 }
+
 
 /* Adjust Responsive */
 
@@ -634,14 +638,25 @@ display: none;
 }
 
 
-/* List: 
-- project page responsoive *(more or less, grid might need changing
+/* 
+
+FINISHED
+- project page responsoive * (more or less, grid might need changing 
 - fix home gird images < 640 * think it's fine?
 - fix the height of hero right gif on responsive *
+- organise what projects to include *
 
-- Have a gallery page of all projects!! project archive?
-- organise what projects to include
+ESSENTIALS
 - create all pages and put baseline info in them
 - go through each page one by one with copy and images 
 - choose fonts and create logo 
-- put it live + link domain */
+- put it live + link domain 
+- DECREASE SIZE OF THUMBNAILS
+
+EXTRA
+- box shadows?
+- Have a gallery page of all projects!! project archive?
+
+
+
+*/
