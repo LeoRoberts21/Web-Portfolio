@@ -31,16 +31,3 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll();
 });
 
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const ctaSection = document.querySelector('.cta');
-        const ctaLinks = document.querySelectorAll('.cta-links');
-
-        ctaSection.addEventListener('mouseenter', () => {
-            ctaLinks.forEach(link => link.classList.add('cta-links-bold'));
-        });
-
-        ctaSection.addEventListener('mouseleave', () => {
-            ctaLinks.forEach(link => link.classList.remove('cta-links-bold'));
-        });
-    });

@@ -1,4 +1,3 @@
-
 .p-hero-right {
   width: 100%;
   align-self: center;
@@ -9,8 +8,8 @@
   align-self: center;
 }
 .project-description {
-width: 70%;
-align-self: center;
+  width: 70%;
+  align-self: center;
 }
 
 .project-mockups {
@@ -18,7 +17,7 @@ align-self: center;
 }
 
 .p-hero {
-  display: flex; 
+  display: flex;
   gap: 3rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -28,18 +27,19 @@ align-self: center;
 
 .p-desc-row-left {
   width: 50%;
+  line-height: 2rem;
 }
 
 .p-desc-row-right {
   text-align: left;
   line-height: 1.7rem;
-  width: 50%; 
+  width: 50%;
   word-wrap: break-word;
 }
 
 /* project grid */
 
-.p-project-grid{
+.p-project-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -80,11 +80,11 @@ align-self: center;
 
 .p-grid-btns {
   display: flex;
-justify-content: center;
-gap: 1.25rem;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
-/* ANIMATION */
+/* ANIMATION 
 
 #dine-gif {
  height: 69vh;
@@ -103,12 +103,14 @@ gap: 1.25rem;
   100%   { background-image: url('mockups/cfd-laptop.png'); } 
 }
 
+*/
+
 /* responsive */
 
 @media (min-width: 960px) and (max-width: 1199px) {
-.project-mockups {
-  width: 90%;
-}
+  .project-mockups {
+    width: 90%;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 959px) {
@@ -116,12 +118,12 @@ gap: 1.25rem;
     width: 100%;
   }
 
-  .p-project-grid{
+  .p-project-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .p-row-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,37 +133,36 @@ gap: 1.25rem;
   .single {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 639px) {
+  .project-mockups {
+    width: 100%;
   }
 
-  @media  (max-width: 639px) {
-    .project-mockups {
-      width: 100%;
-    }
+  .project-description {
+    text-align: center;
+    width: 100%;
+  }
 
-    .project-description {
-      text-align: center;
-      width: 100%;
-    }
+  .p-desc-row-left {
+    text-align: center;
+    width: 100%;
+  }
 
-    .p-desc-row-left{
-      text-align: center;
-      width: 100%;
-    }
+  .p-desc-row-left {
+    text-align: center;
+    width: 100%;
+  }
 
-    .p-desc-row-left {
+  .p-hero-left,
+  .p-hero-right {
+    width: 100%;
+  }
 
-      text-align: center;
-      width: 100%;
-    }
-
-    .p-hero-left,
-    .p-hero-right {
-      width: 100%;
-    }
-
-    .p-row-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    }
+  .p-row-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
