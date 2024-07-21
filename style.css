@@ -426,67 +426,67 @@ hr {
 
 @keyframes giffy {
   0% {
-    background-image: url("hero-gif/frame-1.png");
+    background-image: url("hero-gif/frame-1.webp");
   }
   5% {
-    background-image: url("hero-gif/frame-2.png");
+    background-image: url("hero-gif/frame-2.webp");
   }
   10% {
-    background-image: url("hero-gif/n-3.jpg");
+    background-image: url("hero-gif/n-3.webp");
   }
   15% {
-    background-image: url("hero-gif/n-4.jpg");
+    background-image: url("hero-gif/n-4.webp");
   }
   20% {
-    background-image: url("hero-gif/frame-5.png");
+    background-image: url("hero-gif/frame-5.webp");
   }
   25% {
-    background-image: url("hero-gif/frame-6.png");
+    background-image: url("hero-gif/frame-6.webp");
   }
   30% {
-    background-image: url("hero-gif/frame-7.png");
+    background-image: url("hero-gif/frame-7.webp");
   }
   35% {
-    background-image: url("hero-gif/n-5.jpg");
+    background-image: url("hero-gif/n-5.webp");
   }
   40% {
-    background-image: url("hero-gif/frame-9.png");
+    background-image: url("hero-gif/frame-9.webp");
   }
   45% {
-    background-image: url("hero-gif/frame-10.png");
+    background-image: url("hero-gif/frame-10.webp");
   }
   50% {
-    background-image: url("hero-gif/n-6.jpg");
+    background-image: url("hero-gif/n-6.webp");
   }
   55% {
-    background-image: url("hero-gif/n-7.jpg");
+    background-image: url("hero-gif/n-7.webp");
   }
   60% {
-    background-image: url("hero-gif/frame-13.png");
+    background-image: url("hero-gif/frame-13.webp");
   }
   65% {
-    background-image: url("hero-gif/frame-14.png");
+    background-image: url("hero-gif/frame-14.webp");
   }
   70% {
-    background-image: url("hero-gif/frame-15.png");
+    background-image: url("hero-gif/frame-15.webp");
   }
   75% {
-    background-image: url("hero-gif/frame-16.png");
+    background-image: url("hero-gif/frame-16.webp");
   }
   80% {
-    background-image: url("hero-gif/frame-17.png");
+    background-image: url("hero-gif/frame-17.webp");
   }
   85% {
-    background-image: url("hero-gif/frame-18.png");
+    background-image: url("hero-gif/frame-18.webp");
   }
   90% {
-    background-image: url("hero-gif/frame-19.png");
+    background-image: url("hero-gif/frame-19.webp");
   }
   95% {
-    background-image: url("hero-gif/frame-20.png");
+    background-image: url("hero-gif/frame-20.webp");
   }
   100% {
-    background-image: url("hero-gif/frame-1.png");
+    background-image: url("hero-gif/frame-1.webp");
   }
 }
 
