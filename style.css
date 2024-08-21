@@ -47,6 +47,14 @@ li:hover {
   color: #e45e40;
 }
 
+a:active {
+  color: black;
+}
+
+li:active {
+  color: black;
+}
+
 .inline-link {
   color: #e45e40;
   text-decoration: none;
@@ -58,6 +66,10 @@ li:hover {
   text-decoration: none;
   transition: all 150ms ease-out;
 }
+.inline-link:active {
+  color: black;
+}
+
 
 .bold {
   font-weight: 600;
@@ -106,39 +118,54 @@ li:hover {
 /* Buttons */
 .button-primary {
   transition: all 200ms ease-out;
-  padding: 13px 23px;
-  border-radius: 100px;
+  padding: 11px 18px;
+  border-radius: 7px;
   border: 2px solid #222222;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1rem;
   color: #fff;
   background-color: #222222;
+  letter-spacing: 0.3px;
 }
 
 .button-primary:hover {
-  background-color: #ffffff00;
-  border: 2px solid #222222;
-  color: #222222;
+  background-color: #e45e40;
+  border: 2px solid #e45e40;
+  color: #fff;
   cursor: pointer;
+}
+
+.button-primary:active {
+  background-color: #222222;
+  color: #fff;
+  border: 2px solid #222222;
 }
 
 .button-secondary {
   transition: all 200ms ease-out;
-  padding: 13px 23px;
-  border-radius: 100px;
+  padding: 11px 18px;
+  border-radius: 7px;
   border: 2px solid #222222;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1rem;
   color: #222222;
   background-color: #22222200;
+  letter-spacing: 0.3px;
 }
 
 .button-secondary:hover {
-  opacity: 40%;
   cursor: pointer;
+  border: 2px solid #e45e40;
+  color: #e45e40;
 }
+
+.button-secondary:active {
+  border: 2px solid #222222;
+  color: #222222;
+}
+
 
 .double-btns {
   display: flex;
@@ -156,10 +183,21 @@ li:hover {
 }
 
 .text-meta {
-  color: #222222;
+  color: rgb(174, 174, 174);
   font-size: 0.9rem;
-  opacity: 30%;
   padding-bottom: 1vh;
+}
+
+.text-meta a{
+  color: rgb(174, 174, 174);
+}
+
+.text-meta a:hover{
+  color: #e45e40;
+}
+
+.text-meta a:active{
+  color: rgb(174, 174, 174);
 }
 
 .h1 {
@@ -190,6 +228,18 @@ li:hover {
   color: rgb(174, 174, 174);
   line-height: 1.6;
   margin-top: 1.5vh;
+}
+
+.text-muted a{
+  color: rgb(174, 174, 174);
+}
+
+.text-muted a:hover{
+  color: #e45e40;
+}
+
+.text-muted a:active{
+  color: rgb(174, 174, 174);
 }
 
 /* Navbar */
@@ -255,7 +305,7 @@ hr {
   height: 30rem;
   object-fit: cover;
   object-position: top;
-  border-radius: 2px;
+  border-radius: 7px;
   /*
   -webkit-box-shadow: 0px 12px 29px -19px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 12px 19px -19px rgba(0, 0, 0, 0.33);
@@ -324,7 +374,7 @@ hr {
 
 .self-img {
   width: 13rem;
-  border-radius: 2px;
+  border-radius: 7px;
   object-fit: cover;
   height: 13rem;
 }
@@ -407,7 +457,7 @@ hr {
   min-width: 100%;
   max-width: 100%;
   height: 69vh;
-  border-radius: 2px;
+  border-radius: 7px;
   background-size: cover;
   background-position: top;
   -webkit-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
