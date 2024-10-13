@@ -37,6 +37,14 @@
   word-wrap: break-word;
 }
 
+.project-row-left p{
+margin-top: 0px;
+}
+
+.project-row-right p{
+  margin-top: 0px;
+  }
+
 /* project grid */
 
 .p-project-grid {
