@@ -11,10 +11,13 @@
 html {
   scroll-behavior: smooth;
 }
+* {
+  font-family: "manrope", sans-serif;
+}
 
 body {
   margin: 0px;
-  font-family: "manrope";
+  font-family: "manrope", sans-serif;
   letter-spacing: 0.3px;
   margin-bottom: 0px;
 }
