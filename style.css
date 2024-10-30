@@ -515,9 +515,14 @@ hr {
   -moz-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
   transition: all 150ms ease-out;
+
+  /* Enable smoother rendering in Firefox */
+  will-change: background-image;
+  transform: translateZ(0); /* Forces GPU acceleration */
+  image-rendering: -moz-crisp-edges;
 }
 
-/* Start the animation only when the start-animation class is present */
+/* Start the animation only when the start-animation class is activated */
 #hero-gif.start-animation {
   animation: giffy 15s infinite steps(1);
 }

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+// hero gif 
 
 
 
