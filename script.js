@@ -31,3 +31,50 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll();
 });
 
+
+
+
+
+
+
+
+// List of image URLs for each frame in the animation
+const frames = [
+    "hero-gif/frame-1.webp",
+    "hero-gif/frame-2.webp",
+    "hero-gif/n-3.webp",
+    "hero-gif/n-4.webp",
+    "hero-gif/frame-5.webp",
+    "hero-gif/frame-6.webp",
+    "hero-gif/frame-7.webp",
+    "hero-gif/n-5.webp",
+    "hero-gif/frame-9.webp",
+    "hero-gif/frame-10.webp",
+    "hero-gif/n-6.webp",
+    "hero-gif/n-7.webp",
+    "hero-gif/frame-13.webp",
+    "hero-gif/frame-14.webp",
+    "hero-gif/frame-15.webp",
+    "hero-gif/frame-16.webp",
+    "hero-gif/frame-17.webp",
+    "hero-gif/frame-18.webp",
+    "hero-gif/frame-19.webp",
+    "hero-gif/frame-20.webp"
+  ];
+  
+  // Preload images
+  let loadedFrames = 0;
+  const totalFrames = frames.length;
+  
+  frames.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => {
+      loadedFrames += 1;
+      // When all frames are loaded, start the animation
+      if (loadedFrames === totalFrames) {
+        document.getElementById("hero-gif").classList.add("start-animation");
+      }
+    };
+  });
+  
