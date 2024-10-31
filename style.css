@@ -38,7 +38,7 @@ body {
 }
 
 a {
-  color: black;
+  color: #222222;
   text-decoration: none;
   transition: all 150ms ease-out;
 }
@@ -215,13 +215,13 @@ li:active {
 }
 
 .text-meta {
-  color: rgb(174, 174, 174);
+  color: rgb(155, 155, 155);
   font-size: 0.9rem;
   padding-bottom: 1vh;
 }
 
 .text-meta a {
-  color: rgb(174, 174, 174);
+  color: rgb(155, 155, 155);
 }
 
 .text-meta a:hover {
@@ -247,7 +247,7 @@ li:active {
 }
 
 .h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 0px;
 }
@@ -258,13 +258,14 @@ li:active {
 }
 
 .text-muted {
-  color: rgb(174, 174, 174);
-  line-height: 1.6;
+  color: rgb(155, 155, 155);
+  line-height: 1.2;
   margin-top: 1.5vh;
+  margin-bottom:1.5vh;
 }
 
 .text-muted a {
-  color: rgb(174, 174, 174);
+  color: rgb(155, 155, 155);
 }
 
 .text-muted a:hover {
@@ -356,7 +357,6 @@ hr {
 }
 
 .grid-item-text {
-  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,7 +380,17 @@ hr {
 }
 .cta-links {
   transition: all 200ms ease-out;
+  border-bottom: 0.5px solid #222222;
 }
+
+.cta-links:hover {
+  border-bottom: 0.5px solid #2654c8;
+}
+
+.cta-links:active {
+  border-bottom: 0.5px solid #7ca1ff;
+}
+
 
 /*
 .cta-links-bold {
@@ -684,14 +694,14 @@ hr {
     width: 100%;
   }
 
-  
+/*  
   .hero-left {
     order: 2;
   }
   .hero-right {
     order: 1;
   }
-  
+  */
 
   .hero-right img {
     max-height: 30rem;
