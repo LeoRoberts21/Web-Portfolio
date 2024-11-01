@@ -9,7 +9,7 @@
 }
 .project-description {
   width: 70%;
-  align-self: center;
+  align-self: left;
 }
 
 .project-mockups {
@@ -61,7 +61,7 @@ margin-top: 0px;
 
 .p-img {
   width: 100%;
-  height: 30rem;
+  height: 100%;
   object-fit: cover;
   object-position: top;
   border-radius: 7px;
@@ -149,17 +149,12 @@ margin-top: 0px;
   }
 
   .project-description {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
   .p-desc-row-left {
-    text-align: center;
-    width: 100%;
-  }
-
-  .p-desc-row-left {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
@@ -168,9 +163,19 @@ margin-top: 0px;
     width: 100%;
   }
 
+  .p-hero-left .h1 {
+margin-bottom: 0px;
+margin-top: 2rem;
+  
+  }
+
   .p-row-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .p-hero {
+padding-bottom: 0px;  
   }
 }

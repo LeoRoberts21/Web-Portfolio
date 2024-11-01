@@ -855,4 +855,21 @@ hr {
     display: flex;
     justify-content: center;
   }
+
+  .main-logo {
+width: 225px;
+  }
+
+  .navbar-left-link {
+    margin-top: 1.5rem;
+  }
+
+  .navbar-right-list {
+gap: 2rem;
+margin-top: 0px;
+  }
+
+  .nav-hr {
+    margin-top: 2rem;
+    }
 }
