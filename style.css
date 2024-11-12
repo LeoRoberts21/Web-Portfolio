@@ -149,7 +149,7 @@ li:active {
 .button-primary {
   transition: all 200ms ease-out;
   padding: 11px 18px;
-  border-radius: 7px;
+  border-radius: 5px;
   border: 1.5px solid #2654c8;
   text-transform: capitalize;
   font-weight: 500;
@@ -175,7 +175,7 @@ li:active {
 .button-secondary {
   transition: all 200ms ease-out;
   padding: 11px 18px;
-  border-radius: 7px;
+  border-radius: 5px;
   background-color: #f1f1f1;
   border: 1.5px solid #f1f1f1;
   text-transform: capitalize;
