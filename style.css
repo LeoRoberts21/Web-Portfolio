@@ -521,7 +521,7 @@ line-height: 1.7rem;
 
 /* Start the animation only when the start-animation class is activated */
 #hero-gif.start-animation {
-  animation: giffy 15s infinite steps(1);
+  animation: giffy 25s infinite steps(1);
 }
 
 #hero-gif:hover {
@@ -534,67 +534,61 @@ line-height: 1.7rem;
 
 @keyframes giffy {
   0% {
-    background-image: url("hero-gif/frame-1.webp");
+    background-image: url("hero-gif/ocr.webp");
   }
-  5% {
+  6% {
     background-image: url("hero-gif/frame-2.webp");
   }
-  10% {
-    background-image: url("hero-gif/n-3.webp");
+  11% {
+    background-image: url("hero-gif/cg.webp");
   }
-  15% {
-    background-image: url("hero-gif/n-4.webp");
+  17% {
+    background-image: url("hero-gif/az.webp");
   }
-  20% {
+  22% {
     background-image: url("hero-gif/frame-5.webp");
   }
-  25% {
+  28% {
     background-image: url("hero-gif/frame-6.webp");
   }
-  30% {
+  33% {
     background-image: url("hero-gif/frame-7.webp");
   }
-  35% {
+  39% {
     background-image: url("hero-gif/n-5.webp");
   }
-  40% {
-    background-image: url("hero-gif/frame-9.webp");
-  }
-  45% {
+  44% {
     background-image: url("hero-gif/frame-10.webp");
   }
   50% {
     background-image: url("hero-gif/n-6.webp");
   }
-  55% {
+  56% {
     background-image: url("hero-gif/n-7.webp");
   }
-  60% {
-    background-image: url("hero-gif/frame-13.webp");
-  }
-  65% {
-    background-image: url("hero-gif/frame-14.webp");
-  }
-  70% {
-    background-image: url("hero-gif/frame-15.webp");
-  }
-  75% {
+  61% {
     background-image: url("hero-gif/frame-16.webp");
   }
-  80% {
+  67% {
+    background-image: url("hero-gif/frame-14.webp");
+  }
+  72% {
+    background-image: url("hero-gif/frame-15.webp");
+  }
+  78% {
+    background-image: url("hero-gif/kind.webp");
+  }
+  83% {
     background-image: url("hero-gif/frame-17.webp");
   }
-  85% {
+  89% {
     background-image: url("hero-gif/frame-18.webp");
   }
-  90% {
-    background-image: url("hero-gif/frame-19.webp");
-  }
-  95% {
+  94% {
     background-image: url("hero-gif/frame-20.webp");
   }
   100% {
-    background-image: url("hero-gif/frame-1.webp");
+    background-image: url("hero-gif/ocr.webp");
   }
 } 
 
