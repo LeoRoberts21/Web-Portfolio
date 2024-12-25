@@ -137,6 +137,10 @@ li:active {
   background-repeat: no-repeat;
 }
 
+.grid-item-text .btn-text {
+margin-top: 1rem;
+}
+
 .btn-text:hover {
   color: #222222;
   background-position: 52% 50%;
@@ -147,28 +151,26 @@ li:active {
 }
 
 .button-primary {
-  transition: all 200ms ease-out;
-  padding: 11px 18px;
+  transition: background 200ms ease-in-out; 
+  padding: 13px 19px;
   border-radius: 5px;
-  border: 1.5px solid #2654c8;
+  border: 0px solid #2654c8;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   color: #fff;
-  background-color: #2654c8;
+  background: linear-gradient(90deg, rgba(45,87,193,1) 0%, rgba(32,70,166,1) 100%);
   letter-spacing: 0.3px;
+  box-shadow: 0px 0px 15px -5px rgba(45,87,193,1);
 }
 
 .button-primary:hover {
-  background-color: #366fff;
-  border: 1.5px solid #366fff;
-  color: #ffffff;
   cursor: pointer;
+  background: linear-gradient(90deg, rgb(36, 68, 154) 0%, rgb(36, 68, 154) 100%);
 }
 
 .button-primary:active {
-  background-color: #7ca1ff;
-  border: 1.5px solid #7ca1ff;
+opacity: 70%;
   color: #ffffff;
 }
 
@@ -179,7 +181,7 @@ li:active {
   background-color: #f1f1f1;
   border: 1.5px solid #f1f1f1;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.3px;
   color: #222222;
@@ -247,7 +249,7 @@ li:active {
 }
 
 .h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 0px;
 }
