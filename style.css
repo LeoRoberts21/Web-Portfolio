@@ -13,6 +13,7 @@ html {
 }
 * {
   font-family: "manrope", sans-serif;
+
 }
 
 body {
@@ -23,6 +24,17 @@ body {
   margin-bottom: 0px;
 }
 
+
+/*
+
+.bg-pattern {
+    background-color: #fff;
+    background-image: url('images/bg-pattern.png');
+    background-repeat: repeat-x, repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+*/
 .main-logo {
   width: 125px;
   transition: all 150ms ease-out;
@@ -176,28 +188,27 @@ opacity: 70%;
 
 .button-secondary {
   transition: all 200ms ease-out;
-  padding: 11px 18px;
+  padding: 11px 17px;
   border-radius: 5px;
-  background-color: #f1f1f1;
-  border: 1.5px solid #f1f1f1;
+  background-color: transparent;
+    border: 2px solid #2654c8;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.3px;
-  color: #222222;
+  color: #2654c8;
+  box-shadow: 0px 0px 15px -5px rgba(45,87,193,1);
 }
 
 .button-secondary:hover {
   cursor: pointer;
-  color: #222222;
-  background-color: #e8e8e8;
-  border: 1.5px solid #e8e8e8;
+  color: rgb(36, 68, 154);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px -10px rgba(45,87,193,1);
 }
 
 .button-secondary:active {
-  background-color: #f8f8f8;
-  border: 1.5px solid #f8f8f8;
-  color: #222222;
+opacity: 70%;
 }
 
 .double-btns {
@@ -349,8 +360,8 @@ margin-top: 1.5rem;
   -webkit-box-shadow: 0px 12px 29px -19px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 12px 19px -19px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 12px 29px -19px rgba(0, 0, 0, 0.33);
-  */
-  cursor: pointer;
+  
+  cursor: pointer; */
   transition: all 200ms ease-out;
   border: 0px solid #fff;
 }
@@ -360,7 +371,9 @@ margin-top: 1.5rem;
   -moz-box-shadow: 0px 18px 29px -19px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 18px 29px -19px rgba(0, 0, 0, 0.33);
   transform: scale(1.015);
+  cursor: url('/images/Group-2.png') 30 30, auto;
 }
+
 
 .grid-item-text {
   display: flex;
@@ -500,6 +513,8 @@ line-height: 1.7rem;
   }
 }
 
+*/
+
 /* Gif  
 
 #hero-gif {
@@ -591,6 +606,71 @@ line-height: 1.7rem;
   }
 } 
 
+/* Banner Background
+/*---------------------------------------------*/
+
+.banner {
+  min-width: 100%;
+  max-width: 100%;
+  height: 67vh;
+  border-radius: 7px;
+  background-size: cover;
+  background-position: top;
+  -webkit-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
+  transition: all 150ms ease-out;
+  /* Enable smoother rendering in Firefox */
+  will-change: background-image;
+  transform: translateZ(0); /* Forces GPU acceleration */
+  image-rendering: -moz-crisp-edges;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9, .img-10, .img-11, .img-12, .img-13, .img-14, .img-15, .img-16, .img-17, .img-18 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -18;
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 54s; 
+  animation-iteration-count: infinite;
+  border-radius: 7px;
+}
+
+.img-1 { animation-delay: 0s; }
+.img-2 { animation-delay: 3s; }
+.img-3 { animation-delay: 6s; }
+.img-4 { animation-delay: 9s; }
+.img-5 { animation-delay: 12s; }
+.img-6 { animation-delay: 15s; }
+.img-7 { animation-delay: 18s; }
+.img-8 { animation-delay: 21s; }
+.img-9 { animation-delay: 24s; }
+.img-10 { animation-delay: 27s; }
+.img-11 { animation-delay: 30s; }
+.img-12 { animation-delay: 33s; }
+.img-13 { animation-delay: 36s; }
+.img-14 { animation-delay: 39s; }
+.img-15 { animation-delay: 42s; }
+.img-16 { animation-delay: 45s; }
+.img-17 { animation-delay: 48s; }
+.img-18 { animation-delay: 51s; }
+
+/* Banner Animations (4s per image, 16s total timeline)
+/*---------------------------------------------*/
+
+@keyframes fade {
+	/* By offsetting the fade out and animating z-index, we can prevent the background from showing up at all*/
+  0%   { opacity: 0; z-index: -10; }
+  2%   { opacity: 1; z-index: -10; } 
+  98%  { opacity: 1; z-index: -20; } 
+  100% { opacity: 0; z-index: -20; } 
+}
 
 /* Adjust Responsive */
 
@@ -840,7 +920,7 @@ margin-bottom: 0px;
     width: 100%;
   }
 
-  #hero-gif {
+  .banner {
     height: 40vh;
   }
   
@@ -966,71 +1046,4 @@ margin-top: 0px;
     .cta .lead-text {
   margin-bottom: 0px;
     }
-}
-
-
-/* Banner Background
-/*---------------------------------------------*/
-
-.banner {
-  min-width: 100%;
-  max-width: 100%;
-  height: 67vh;
-  border-radius: 7px;
-  background-size: cover;
-  background-position: top;
-  -webkit-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 17px 29px -19px rgba(0, 0, 0, 0.33);
-  transition: all 150ms ease-out;
-  /* Enable smoother rendering in Firefox */
-  will-change: background-image;
-  transform: translateZ(0); /* Forces GPU acceleration */
-  image-rendering: -moz-crisp-edges;
-}
-
-.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9, .img-10, .img-11, .img-12, .img-13, .img-14, .img-15, .img-16, .img-17, .img-18 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -18;
-  opacity: 0;
-  animation-name: fade;
-  animation-duration: 54s; 
-  animation-iteration-count: infinite;
-  border-radius: 7px;
-}
-
-.img-1 { animation-delay: 0s; }
-.img-2 { animation-delay: 3s; }
-.img-3 { animation-delay: 6s; }
-.img-4 { animation-delay: 9s; }
-.img-5 { animation-delay: 12s; }
-.img-6 { animation-delay: 15s; }
-.img-7 { animation-delay: 18s; }
-.img-8 { animation-delay: 21s; }
-.img-9 { animation-delay: 24s; }
-.img-10 { animation-delay: 27s; }
-.img-11 { animation-delay: 30s; }
-.img-12 { animation-delay: 33s; }
-.img-13 { animation-delay: 36s; }
-.img-14 { animation-delay: 39s; }
-.img-15 { animation-delay: 42s; }
-.img-16 { animation-delay: 45s; }
-.img-17 { animation-delay: 48s; }
-.img-18 { animation-delay: 51s; }
-
-/* Banner Animations (4s per image, 16s total timeline)
-/*---------------------------------------------*/
-
-@keyframes fade {
-	/* By offsetting the fade out and animating z-index, we can prevent the background from showing up at all*/
-  0%   { opacity: 0; z-index: -10; }
-  2%   { opacity: 1; z-index: -10; } 
-  98%  { opacity: 1; z-index: -20; } 
-  100% { opacity: 0; z-index: -20; } 
 }
