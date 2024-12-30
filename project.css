@@ -1,15 +1,3 @@
-.p-hero-full {
-  background-image: url(images/project-gradient.png),
-    url(/mockups/cfd-header.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, bottom center;
-  background-size: 100% auto, 90% auto;
-  z-index: 0, 1;
-  padding-bottom: 0px;
-  background-size: 100% auto, contain;
-  height: 53vh;
-  margin-top: 3rem;
-}
 
 .project-text-center {
   text-align: center;
@@ -252,4 +240,33 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+}
+
+
+/* NEW PROJECT HEROS */
+
+.p-hero-full {
+  padding-bottom: 0px;
+  height: 53vh;
+  margin-top: 3rem;
+}
+
+.cfd-hero {
+  background-image: url(images/project-gradient.png),
+  url(/mockups/cfd-header.png);
+background-repeat: no-repeat, no-repeat;
+background-position: bottom center, bottom center;
+background-size: 100% auto, 90% auto;
+z-index: 0, 1;
+background-size: 100% auto, contain;
+}
+
+.ofd-hero {
+  background-image: url(images/project-gradient.png),
+  url(/mockups/ofd-hero.png);
+background-repeat: no-repeat, no-repeat;
+background-position: bottom center, bottom center;
+background-size: 100% auto, 90% auto;
+z-index: 0, 1;
+background-size: 100% auto, contain;
 }
