@@ -32,47 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// PROJECT SCROLL VIDEO
 
-// // hero gif 
+const videoContainer = document.querySelector('.video-container');
 
-// // List of image URLs for each frame in the animation
-// const frames = [
-// "hero-gif/ocr.webp",
-// "hero-gif/frame-2.webp",
-// "hero-gif/cg.webp",
-// "hero-gif/az.webp",
-// "hero-gif/frame-5.webp",
-// "hero-gif/frame-6.webp",
-// "hero-gif/frame-7.webp",
-// "hero-gif/n-5.webp",
-// "hero-gif/frame-10.webp",
-// "hero-gif/n-6.webp",
-// "hero-gif/n-7.webp",
-// "hero-gif/frame-16.webp",
-// "hero-gif/frame-14.webp",
-// "hero-gif/frame-15.webp",
-// "hero-gif/kind.webp",
-// "hero-gif/frame-17.webp",
-// "hero-gif/frame-18.webp",
-// "hero-gif/frame-20.webp",
-// "hero-gif/ocr.webp",
-//   ];
+const isInViewport = (element, offset = 0) => {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= -offset && 
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
 
-  
-//   // Preload images
-//   let loadedFrames = 0;
-//   const totalFrames = frames.length;
-  
-//   frames.forEach((src) => {
-//     const img = new Image();
-//     img.src = src;
-//     img.onload = () => {
-//       loadedFrames += 1;
-//       // When all frames are loaded, start the animation
-//       if (loadedFrames === totalFrames) {
-//         document.getElementById("hero-gif").classList.add("start-animation");
-//       }
-//     };
-//   });
-  
+const handleScroll = () => {
+  if (isInViewport(videoContainer, 700)) { // Adjust offset as needed
+    videoContainer.querySelector('video').play();
+  } else {
+    videoContainer.querySelector('video').pause();
+  }
+};
+
+window.addEventListener('scroll', handleScroll);
 
