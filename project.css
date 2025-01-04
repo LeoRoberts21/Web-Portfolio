@@ -270,3 +270,13 @@ background-size: 100% auto, 90% auto;
 z-index: 0, 1;
 background-size: 100% auto, contain;
 }
+
+.streamline-hero {
+  background-image: url(images/project-gradient.png),
+  url(/mockups/streamline-mockup.png);
+background-repeat: no-repeat, no-repeat;
+background-position: bottom center, bottom center;
+background-size: 100% auto, 90% auto;
+z-index: 0, 1;
+background-size: 100% auto, contain;
+}
