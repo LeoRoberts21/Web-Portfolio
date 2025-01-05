@@ -254,40 +254,38 @@
 .cfd-hero {
   background-image: url(images/project-gradient.png),
   url(/mockups/cfd-header.png);
-background-repeat: no-repeat, no-repeat;
-background-position: bottom center, bottom center;
-background-size: 100% auto, 90% auto;
-z-index: 0, 1;
-background-size: 100% auto, contain;
 }
 
 .ofd-hero {
   background-image: url(images/project-gradient.png),
   url(/mockups/ofd-hero.png);
-background-repeat: no-repeat, no-repeat;
-background-position: bottom center, bottom center;
-background-size: 100% auto, 90% auto;
-z-index: 0, 1;
-background-size: 100% auto, contain;
 }
 
 .streamline-hero {
   background-image: url(images/project-gradient.png),
   url(/mockups/streamline-mockup.png);
-background-repeat: no-repeat, no-repeat;
-background-position: bottom center, bottom center;
-background-size: 100% auto, 90% auto;
-z-index: 0, 1;
-background-size: 100% auto, contain;
 }
 
 .calpendo-hero {
   background-image: url(images/project-gradient.png),
   url(/mockups/calpendo-mockup.png);
-background-repeat: no-repeat, no-repeat;
-background-position: bottom center, bottom center;
-background-size: 100% auto, 90% auto;
-z-index: 0, 1;
-background-size: 100% auto, contain;
+}
 
+.ra-hero {
+  background-image: url(images/project-gradient.png),
+  url(/mockups/ra-hero.webp);
+}
+
+
+.nihongo-hero {
+  background-image: url(images/project-gradient.png),
+  url(/mockups/nihongo-hero.webp);
+}
+
+.project-hero {
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, bottom center;
+  background-size: 100% auto, 90% auto;
+  z-index: 0, 1;
+  background-size: 100% auto, contain;
 }
