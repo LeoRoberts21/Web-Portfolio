@@ -13,47 +13,24 @@
   align-self: center;
 }
 
+.p-hero-full {
+  height: 53vh;
+  padding-bottom: 0px;
+  margin-top: 3rem;
+}
+
 .p-hero-left {
   width: 75%;
   align-self: center;
 }
 .project-description {
-  width: 60%;
+  width: 50%;
   align-self: left;
   line-height: 1.7rem;
 }
 
 .project-mockups {
   width: 75%;
-}
-
-.p-hero {
-  display: flex;
-  gap: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  flex-direction: column;
-  text-align: center;
-}
-
-.p-desc-row-left {
-  width: 50%;
-  line-height: 2rem;
-}
-
-.p-desc-row-right {
-  text-align: left;
-  line-height: 1.7rem;
-  width: 50%;
-  word-wrap: break-word;
-}
-
-.project-row-left p {
-  margin-top: 0px;
-}
-
-.project-row-right p {
-  margin-top: 0px;
 }
 
 /* project grid */
@@ -244,12 +221,11 @@
 
 
 /* NEW PROJECT HEROS */
-
 .p-hero-full {
   padding-bottom: 0px;
-  height: 53vh;
   margin-top: 3rem;
 }
+
 
 .cfd-hero {
   background-image: url(images/project-gradient.png),
