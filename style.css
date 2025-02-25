@@ -846,26 +846,22 @@ hr {
   .hero-left-text {
     max-width: 790px;
   }
-
-  
 }
 
 @media (min-width: 1400px) and (max-width: 1599px) {
   .banner {
     min-height: 480px;
   }
-
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .grid-item-img {
     height: 25rem;
   }
-    
+
   .banner {
     min-height: 450px;
   }
-
 }
 
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -876,7 +872,7 @@ hr {
 
   .banner {
     min-height: 600px;
-    }
+  }
 
   .h1 {
     margin-top: 0rem;
@@ -923,6 +919,16 @@ hr {
 
   .logo-scroller {
     width: 75%;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 639px) {
+  .banner {
+    min-height: 54vh;
+  }
+
+  .grid-item-img {
+    min-height: 45vh;
   }
 }
 
@@ -1101,7 +1107,7 @@ hr {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  
+
   .hero-right {
     order: 1;
   }
