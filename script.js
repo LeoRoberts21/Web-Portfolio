@@ -34,25 +34,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // PROJECT SCROLL VIDEO
 
-const videoContainer = document.querySelector('.video-container');
+document.addEventListener("DOMContentLoaded", () => {
+  const videoContainer = document.querySelector('.video-container');
+  if (!videoContainer) return; // Stop execution if the element doesn't exist
 
-const isInViewport = (element, offset = 0) => {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= -offset && 
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-};
+  const video = videoContainer.querySelector('video');
+  if (!video) return;
 
-const handleScroll = () => {
-  if (isInViewport(videoContainer, 700)) { // Adjust offset as needed
-    videoContainer.querySelector('video').play();
-  } else {
-    videoContainer.querySelector('video').pause();
-  }
-};
+  const isInViewport = (element, offset = 0) => {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= -offset && 
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
 
-window.addEventListener('scroll', handleScroll);
+  const handleScroll = () => {
+    if (isInViewport(videoContainer, 700)) {
+      video.play().catch(error => console.error("Video play failed:", error));
+    } else {
+      video.pause();
+    }
+  };
 
+  window.addEventListener('scroll', handleScroll);
+});
