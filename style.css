@@ -19,8 +19,16 @@ body {
   margin: 0px;
   font-family: "manrope", sans-serif;
   font-weight: 400;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
   margin-bottom: 0px;
+}
+
+b {
+  color: #1d242f;
+}
+
+p {
+  color: #3a4253;
 }
 
 /*
@@ -43,12 +51,13 @@ body {
 }
 
 .container {
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 
+
 a {
-  color: #222222;
+  color: #1d242f;
   text-decoration: none;
   transition: all 150ms ease-out;
 }
@@ -57,15 +66,7 @@ a:hover {
   color: #2654c8;
 }
 
-li:hover {
-  color: #2654c8;
-}
-
 a:active {
-  color: #7ca1ff;
-}
-
-li:active {
   color: #7ca1ff;
 }
 
@@ -132,6 +133,10 @@ li:active {
   margin-top: 1rem;
 }
 
+.margin-top-none {
+  margin-top: 0px;
+}
+
 .margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
@@ -145,7 +150,7 @@ li:active {
 
 .btn-text {
   transition: all 200ms ease-out;
-  color: #222222;
+  color: #1d242f;
   font-size: 14px;
   padding: 0px;
   text-align: left;
@@ -165,7 +170,7 @@ li:active {
 }
 
 .btn-text:hover {
-  color: #222222;
+  color: #1d242f;
   background-position: 52% 50%;
 }
 
@@ -246,6 +251,10 @@ li:active {
   margin-bottom: 3.5vh;
 }
 
+.text-large {
+  font-size: 19px;
+}
+
 .text-meta {
   color: rgb(155, 155, 155);
   font-size: 0.9rem;
@@ -265,11 +274,12 @@ li:active {
 }
 
 .h1 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.44rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
+  color: #1d242f;
 }
 
 .hp-h1 {
@@ -277,31 +287,33 @@ li:active {
 }
 
 .h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.25rem;
   line-height: 1.3;
+  color: #1d242f;
 }
 
 .h3 {
   font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 0px;
+  color: #1d242f;
 }
 
 .h4 {
   font-size: 1rem;
   font-weight: 400;
+  color: #1d242f;
 }
 
 .text-muted {
-  color: rgb(155, 155, 155);
-  line-height: 1.2;
+  color: #8a91a1;
   margin-top: 1.5vh;
   margin-bottom: 1.6vh;
 }
 
 .text-muted a {
-  color: rgb(155, 155, 155);
+  color: #8a91a1;
 }
 
 .text-muted a:hover {
@@ -311,6 +323,8 @@ li:active {
 .text-muted a:active {
   color: #7ca1ff;
 }
+
+
 
 /* Navbar */
 .navbar {
@@ -333,7 +347,7 @@ li:active {
 
 /* Horizontal Rule */
 hr {
-  border-top: 1px solid rgb(229, 229, 229);
+  border-top: 1px solid #e0e5ef;
   border-bottom: none;
 }
 
@@ -369,7 +383,7 @@ hr {
 
 .grid-container {
   display: grid;
-  column-gap: 3rem;
+  column-gap: 2.5rem;
   row-gap: 3rem;
   grid-template-columns: 1fr 1fr;
 }
@@ -413,6 +427,10 @@ hr {
   opacity: 100%;
 }
 
+.box-shadow-default {
+  box-shadow: 0px 5px 29px -15px rgba(0, 0, 0, 0.24);
+}
+
 /* cta */
 
 .cta {
@@ -426,7 +444,7 @@ hr {
 }
 .cta-links {
   transition: all 200ms ease-out;
-  border-bottom: 0.5px solid #222222;
+  border-bottom: 0.5px solid #1d242f;
 }
 
 .cta-links:hover {
