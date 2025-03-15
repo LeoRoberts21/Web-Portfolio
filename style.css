@@ -157,7 +157,7 @@ a:active {
 
 .btn-text {
   transition: all 200ms ease-out;
-  color: #1d242f;
+  color: #2654c8;
   font-size: 14px;
   padding: 0px;
   text-align: left;
@@ -177,7 +177,7 @@ a:active {
 }
 
 .btn-text:hover {
-  color: #1d242f;
+
   background-position: 52% 50%;
 }
 
