@@ -1252,5 +1252,11 @@ color: #3a425375;
   .row-left p{
     margin-bottom: 1.5vh;
   }
+  .hero-left {
+    order: 1;
+  }
+  .hero-right {
+    order: 2;
+  }
 }
 
