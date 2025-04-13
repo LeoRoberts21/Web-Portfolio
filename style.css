@@ -4,8 +4,8 @@
 
 /* General Elements */
 ::selection {
-  color: #2654c8;
-  background: #ffffff;
+  background: #2654c8;
+  color: #ffffff;
 }
 
 html {
@@ -165,7 +165,7 @@ a:active {
   border: 0px;
   background-color: #2654c800;
   cursor: pointer;
-  width: 200px;
+  width: 190px;
   background-position: 56% 50%;
   background-size: 12px 30px;
   background-image: url("/images/arrow-right.svg");
@@ -466,7 +466,6 @@ color: #3a425375;
 
 .cta:hover {
   color: #2b2b2b18;
-  cursor: pointer;
 }
 .cta-links {
   transition: all 200ms ease-out;
@@ -733,7 +732,7 @@ color: #3a425375;
 .img-13 {
   animation-delay: 36s;
 }
-.img-14 {
+/* .img-14 {
   animation-delay: 39s;
 }
 .img-15 {
@@ -747,7 +746,7 @@ color: #3a425375;
 }
 .img-18 {
   animation-delay: 51s;
-}
+} */
 
 /* Banner Animations (4s per image, 16s total timeline)
 /*---------------------------------------------*/
