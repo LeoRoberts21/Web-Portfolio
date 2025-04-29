@@ -55,7 +55,6 @@ p {
   margin-right: 4vw;
 }
 
-
 a {
   color: #1d242f;
   text-decoration: none;
@@ -179,7 +178,6 @@ a:active {
 } */
 
 .btn-text:hover {
-
   background-position: 58% 50%;
 }
 
@@ -332,8 +330,6 @@ a:active {
   color: #7ca1ff;
 }
 
-
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -397,12 +393,12 @@ hr {
 .hero-pills span {
   background-color: #f7f8fa;
   padding: 0px 15px 0px 15px;
-line-height:2.3;
-border-radius: 5px;
-font-size: 14px;
-font-weight: 500;
-margin-bottom: 0.25rem;
-color: #3a425375;
+  line-height: 2.3;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #3a425375;
 }
 
 /* Grid */
@@ -599,7 +595,6 @@ color: #3a425375;
 
 .slider-logo-card:hover {
   transform: scale(1.05);
-  cursor: pointer;
 }
 
 /* Gallery page 
@@ -637,8 +632,6 @@ color: #3a425375;
 }
 
 */
-
-
 
 /* Banner Background
 /*---------------------------------------------*/
@@ -961,7 +954,6 @@ color: #3a425375;
   }
 
   .grid-container {
-
     row-gap: 3rem;
     column-gap: 2rem;
   }
@@ -1094,7 +1086,7 @@ color: #3a425375;
     margin-top: 1.3rem;
   }
 
-  .margin-top-large{
+  .margin-top-large {
     margin-top: 3rem;
   }
 
@@ -1121,7 +1113,6 @@ color: #3a425375;
 
   .row-left p {
     line-height: 1.7rem;
-
   }
 
   .row-layout {
@@ -1183,9 +1174,9 @@ color: #3a425375;
     font-size: 0.95rem;
   }
 
-.cta {
-  text-align: left;
-}
+  .cta {
+    text-align: left;
+  }
 
   .cta .muted-inner {
     padding-top: 4rem;
@@ -1248,7 +1239,7 @@ color: #3a425375;
     margin-top: 0rem;
   }
 
-  .row-left p{
+  .row-left p {
     margin-bottom: 1.5vh;
   }
   .hero-left {
@@ -1258,4 +1249,3 @@ color: #3a425375;
     order: 2;
   }
 }
-
