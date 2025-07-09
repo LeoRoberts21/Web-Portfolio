@@ -147,30 +147,29 @@ ol {
 
 /* responsive */
 @media (min-width: 1200px) and (max-width: 1400px) {
-.project-description {
-  width: 85%;
-}
+  .project-description {
+    width: 85%;
+  }
 
-.container-project {
-  margin-left: 6vw;
-  margin-right: 6vw;
-}
+  .container-project {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
 
-.project-description p {
-  width: 85%;
-}
+  .project-description p {
+    width: 85%;
+  }
 
-.project-description ul {
-  width: 85%;
-}
+  .project-description ul {
+    width: 85%;
+  }
 
-.project-description ol {
-  width: 85%;
-}
+  .project-description ol {
+    width: 85%;
+  }
 }
 
 @media (min-width: 960px) and (max-width: 1199px) {
-
   .container-project {
     margin-left: 4vw;
     margin-right: 4vw;
@@ -179,15 +178,15 @@ ol {
   .project-description {
     width: 90%;
   }
-  
+
   .project-description p {
     width: 90%;
   }
-  
+
   .project-description ul {
     width: 90%;
   }
-  
+
   .project-description ol {
     width: 90%;
   }
@@ -218,20 +217,19 @@ ol {
     padding-bottom: 3rem;
   }
 
-
   .container-project {
     margin-left: 4vw;
     margin-right: 4vw;
   }
-  
+
   .project-description p {
     width: 100%;
   }
-  
+
   .project-description ul {
     width: 100%;
   }
-  
+
   .project-description ol {
     width: 100%;
   }
@@ -249,11 +247,11 @@ ol {
   .project-pic-gap-bottom {
     padding-bottom: 2rem;
   }
-  
+
   .project-pic-gap-top {
     padding-top: 2rem;
   }
-  
+
   .p-row-container {
     gap: 2rem;
   }
@@ -261,7 +259,7 @@ ol {
   .h3-mid-text {
     margin-top: 2rem;
   }
-  
+
   .case-study-between {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -297,7 +295,6 @@ ol {
     padding-bottom: 3rem;
   }
 
-
   .container-project {
     margin-left: 4vw;
     margin-right: 4vw;
@@ -306,11 +303,11 @@ ol {
   .project-description p {
     width: 100%;
   }
-  
+
   .project-description ul {
     width: 100%;
   }
-  
+
   .project-description ol {
     width: 100%;
   }
@@ -328,11 +325,11 @@ ol {
   .project-pic-gap-bottom {
     padding-bottom: 2rem;
   }
-  
+
   .project-pic-gap-top {
     padding-top: 2rem;
   }
-  
+
   .p-row-container {
     gap: 2rem;
   }
@@ -340,7 +337,7 @@ ol {
   .h3-mid-text {
     margin-top: 2rem;
   }
-  
+
   .case-study-between {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -395,8 +392,33 @@ ol {
   line-height: 1.3;
 }
 
-.cfd-gradient::selection {
-  -webkit-text-fill-color: #2654c8;
+.calpendo-gradient {
+  background: linear-gradient(90deg, #7e97ea 0%, #eb817d 30%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
 }
 
+.ocr-gradient {
+  background: linear-gradient(90deg, #bc936b 0%, #a97d53 30%, #9b744f 40%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
+}
 
+.cfd-gradient::selection {
+  -webkit-text-fill-color: #ffffff;
+
+}
+
+.calpendo-gradient::selection {
+  -webkit-text-fill-color: #fff;
+
+}
+
+.ocr-gradient::selection {
+  -webkit-text-fill-color: #ffffff;
+
+}
