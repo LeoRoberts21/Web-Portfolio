@@ -11,500 +11,198 @@
     <meta name="robots" content="noindex,nofollow" />
     <link rel="icon" type="image/x-icon" href="/images/blue-favicon.png" />
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- Modern Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Onest:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-pattern">
+  <body class="cowboy-gradient">
     <div class="container">
       <!-- NAVBAR -->
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
         <div class="navbar-left">
-          <p class="navbar-left-link">
-            <a href="/">
-              <img
-                class="main-logo"
-                src="images/leo-logo.png"
-                alt="main logo"
-              />
-            </a>
-          </p>
+          <a href="/" class="navbar-left-link" aria-label="Home">
+            <h1 class="logo-mark">Leo.</h1>
+          </a>
         </div>
         <div class="navbar-right">
-          <ul class="navbar-right-list">
-            <!-- <li><a href="gallery">Gallery</a></li> -->
-            <li>
-              <a href="https://www.linkedin.com/in/leoroberts21" target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li><a href="#footer">Let's Chat</a></li>
-          </ul>
+          <div class="double-btns">
+         
+            <a href="mailto:leoj.roberts21@gmail.com" aria-label="Email me">leoj.roberts21@gmail.com</a>
+            <span>Tel: <a href="tel:+447539488923" aria-label="Call me">07539 488923</a></span>
+      <!-- iOS-style dark mode toggle -->
+      <label class="ios-toggle" role="switch" aria-label="Toggle dark mode" aria-checked="false">
+        <input type="checkbox" class="ios-toggle-input" aria-hidden="true">
+        <span class="ios-toggle-track">
+          <span class="ios-toggle-thumb"></span>
+        </span>
+      </label>
+          </div>
         </div>
       </nav>
-      <hr class="nav-hr" />
+
       <!-- HERO -->
-      <section class="hero fade-in padding-top-default padding-bottom-default">
+      <section class="hero fade-in" role="banner">
         <div class="hero-left">
-          <p class="hero-pills"><span>Figma</span><span>Adobe</span><span>HTML</span><SPAN>CSS</SPAN><span>JS</span><span>CMS</span></p>
+
           <h1 class="h1 hp-h1 padding-top-small margin-bottom-small">
-Hello! I’m Leo, a UI Designer & Developer          </h1>
+            UX/UI Designer & Developer 
+          </h1>
           <h1 class="h1 hp-h1-mobile">
-Hello! I’m Leo, a UI Designer & Developer
+            UX/UI Designer & Developer
           </h1>
           <div class="lead-text hero-left-text">
-            <!-- I hold a First-Class Honours degree in
-            <span class="bold">Graphic Design</span> and have over a year’s
-            experience in a digital agency setting, bringing proficiency in
-            <span class="bold">HTML, CSS, and JavaScript</span>, along with
-            expertise in <span class="bold">CMS platforms</span> and tools like
-            <span class="bold">Figma</span>. I enjoy blending creativity with
-            technical skill to build engaging, user-centred websites. Dedicated
-            to continuous growth within the industry. -->
-            <!-- I design and build digital experiences that look great and feel seamless. With a First-Class Honours degree in Graphic Design and agency experience, I bring together design and code to create intuitive, user-friendly interfaces, working with HTML, CSS, JavaScript, and modern design tools. I love problem solving, refining details, and creating clean, accessible designs. Always looking to learn and improve. -->
-<p>With a background in graphic design and 2 years of agency experience, I work across both UI design and front-end development. This lets me approach projects from both a creative and technical point of view. In my current role, I design interfaces in Figma and build them using HTML, CSS, JavaScript, and CMS platforms like WordPress and Joomla to create websites that are visually strong, user-friendly, and technically sound.
-          </p>
-          <p class="hero-left-text">All projects were completed while working at Beyond Your Brand Ltd.</p>
+            <p>Hi, I’m Leo! I’m a UX/UI Designer & Developer with 2+ years of digital agency experience. I stay hands-on throughout the full design process, from client meetings, sketches, and wireframes to designing in Figma and building the final product. I focus on clean, intuitive design and smooth user experiences, using both design and development skills to bring projects to life.</p>
           </div>
           
-          <div class="double-btns">
-            <!--<a href="gallery"
-              ><button class="button-primary">Project Gallery</button></a
-            > -->
-            <a href="#footer"
-              ><button class="button-primary">Contact Me</button></a
-            >
+          <div class="double-btns double-btns-small">
+            <a href="#footer">
+              <button class="button-primary talk-btn" aria-label="Let's talk">
+                <span>Let's Talk</span>
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/leoroberts21" class="linkedin-text"  target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" style="display: flex; align-items: center;">
+              <button class="linkedin-btn" aria-label="LinkedIn"></button><span style="padding-left: 13px;"> Find me on Linkedin</span>
+            </a>
           </div>
+          
+   
         </div>
+        <p class="recent-projects margin-bottom-none" style="
+        position: absolute; top: 75vh;">
+              <a href="#project-grid"></a>
+            </p>
         <div class="hero-right">
-          <!--<div id="hero-gif"></div>-->
-          <div class="banner">
-            <div
-              class="img-1"
-              style="background-image: url('hero-gif/fan-thumb.webp')"
-            ></div>
-            <div
-              class="img-2"
-              style="background-image: url('hero-gif/ocr.webp')"
-            ></div>
-            <div
-              class="img-3"
-              style="background-image: url('hero-gif/elephant-thumb.webp')"
-            ></div>
-             <div
-              class="img-4"
-              style="background-image: url('hero-gif/mja-thumb.webp')"
-            ></div> 
-            <div
-              class="img-5"
-              style="background-image: url('hero-gif/interior-thumb.webp')"
-            ></div>
-            <div
-              class="img-6"
-              style="background-image: url('hero-gif/floria-thumb.webp')"
-            ></div>
-
-            <div
-              class="img-7"
-              style="background-image: url('hero-gif/cg.webp')"
-            ></div>
-            <div
-              class="img-8"
-              style="background-image: url('hero-gif/n-6.webp')"
-            ></div>
- 
-            <div
-              class="img-9"
-              style="background-image: url('hero-gif/vet-thumb.webp')"
-            ></div>
-            <div
-              class="img-10"
-              style="background-image: url('hero-gif/kind.webp')"
-            ></div>
- 
-            <div
-              class="img-11"
-              style="background-image: url('hero-gif/don-thumb.webp')"
-            ></div>
-            <div
-              class="img-12"
-              style="background-image: url('hero-gif/jpd-thumb.webp')"
-            ></div>
-            <div
-              class="img-13"
-              style="background-image: url('hero-gif/fan-thumb.webp')"
-            ></div>
+          <div class="banner" role="img" aria-label="Portfolio project showcase">
+            <div class="img-1" style="background-image: url('hero-gif/fan-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-2" style="background-image: url('hero-gif/ocr.webp')" aria-hidden="true"></div>
+            <div class="img-3" style="background-image: url('hero-gif/elephant-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-4" style="background-image: url('hero-gif/mja-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-5" style="background-image: url('hero-gif/interior-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-6" style="background-image: url('hero-gif/floria-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-7" style="background-image: url('hero-gif/cg.webp')" aria-hidden="true"></div>
+            <div class="img-8" style="background-image: url('hero-gif/n-6.webp')" aria-hidden="true"></div>
+            <div class="img-9" style="background-image: url('hero-gif/vet-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-10" style="background-image: url('hero-gif/kind.webp')" aria-hidden="true"></div>
+            <div class="img-11" style="background-image: url('hero-gif/don-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-12" style="background-image: url('hero-gif/jpd-thumb.webp')" aria-hidden="true"></div>
+            <div class="img-13" style="background-image: url('hero-gif/fan-thumb.webp')" aria-hidden="true"></div>
           </div>
         </div>
       </section>
 
-      <!-- GRID -->
-      <hr />
-      <p class="recent-projects margin-bottom-none">
-        <a href="#project-grid">Recent Projects ↓</a>
-      </p>
-      <section id="project-grid" class="grid-container margin-top-large">
-        <div class="grid-item fade-in">
-          <a href="cotswold-fine-dining"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/cfd-thumbnail.webp"
-              alt="Cotswolds Fine Dining"
-          /></a>
-          <div class="grid-item-text">
-            <a href="cotswold-fine-dining"
-              ><h2 class="h3">Cotswolds Fine Dining</h2></a
-            >
-           <a href="cotswold-fine-dining"
-              ><p>
-                Redesigning a luxury catering website to better reflect its high-end offerings.
-              </p></a
-            >
-            <a class="btn-text" href="cotswold-fine-dining">View Project</a>
-          </div>
+      <!-- FEATURED WORK SECTION -->
+      <div class="featured-work-header">
+        <h2 class="featured-work-title">
+          <span class="featured-work-icon">
+            <img src="icons/paint.png" alt="Paint brush icon" width="24" height="24">
+          </span>
+          Featured Work
+        </h2>
+        <hr class="featured-work-divider">
+        <p class="hero-left-text" style="text-align: right; max-width: 100%; margin-top: var(--spacing-xl);">Currently working at Beyond Your Brand, where these projects were worked on.</p>
         </div>
 
-        <div class="grid-item fade-in">
-          <a href="calpendo"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/calpendo-thumb.webp"
-              alt="Calpendo"
-          /></a>
-          <div class="grid-item-text">
-            <a href="calpendo"><h2 class="h3">Calpendo</h2></a>
-            <a href="calpendo"
-              ><p>
-                Enhancing the UX of a facility management software company’s website.
-              </p></a
-            >
-            <a class="btn-text" href="calpendo">View Project</a>
-          </div>
-        </div>
-
-        <div class="grid-item fade-in">
-          <a href="ocr"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/ocr-thumb.png"
-              alt="OCR website thumbnail"
-          /></a>
-          <div class="grid-item-text">
-            <a href="ocr"
-              ><h2 class="h3">OCR Rally</h2></a
-            >
-             <a href="ocr"
-              ><p>
-Redesigning a premium automotive site to better reflect quality, trust, and clarity.                </p></a
-            >
-            <a class="btn-text" href="ocr">View Project</a>
-          </div>
-        </div>
-
-        <div class="grid-item fade-in">
-          <a href="oxford-fine-dining"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/ofd-thumbnail.webp"
-              alt="Oxford Fine Dining"
-          /></a>
-          <div class="grid-item-text">
-            <a href="oxford-fine-dining"
-              ><h2 class="h3">Oxford Fine Dining</h2></a
-            >
-             <a href="oxford-fine-dining"
-              ><p>
-                Creating a refined, user-friendly website for a fine dining and catering company.
-              </p></a
-            >
-            <a class="btn-text" href="oxford-fine-dining">View Project</a>
-          </div>
-        </div>
-
-        <!-- <div class="grid-item fade-in">
-          <a href="nihongo-net"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/noriko-thumb.webp"
-              alt="Nihongo Net"
-          /></a>
-          <div class="grid-item-text">
-            <a href="nihongo-net"><h2 class="h3">Nihongo Net</h2></a>
-            <a href="nihongo-net"
-              ><p>
-                Building a clean, structured website for a Japanese language tutor.
-              </p></a
-            >
-            <a class="btn-text" href="nihongo-net">View Project</a>
-          </div>
-        </div> -->
-
-        <!--
-        <div class="grid-item fade-in">
-          <a href="witney-therapy"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/therapy-thumbnail.webp"
-              alt="Hari Vaudrey Therapy"
-          /></a>
-          <div class="grid-item-text">
-            <a href="witney-therapy"><h3 class="h3">Hari Vaudrey Therapy</h3></a>
-            <a href="witney-therapy"
-              ><p class="text-muted">Website design & development for a therapy company.</p></a
-            >
-            <a class="btn-text" href="witney-therapy">View Project</a>
-          </div>
-        </div>
-
-      
-
-        <div class="grid-item fade-in">
-          <a href="jason-strong-builders"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/strong-thumbnail.webp"
-              alt="Jason Strong Builders"
-          /></a>
-          <div class="grid-item-text">
-            <a href="jason-strong-builders"
-              ><h3 class="h3">Jason Strong Builders</h3></a
-            >
-            <a href="jason-strong-builders"
-              ><p class="text-muted">
-                Website design & development for a construction company.
-              </p></a
-            >
-            <a class="btn-text" href="jason-strong-builders">View Project</a>
-          </div>
-        </div>
-
-      -->
-        <!-- <div class="grid-item fade-in">
-          <a href="streamlined-analytics"
-            ><img
-              class="grid-item-img"
-              src="/thumbnails/streamlined-thumbnail.webp"
-              alt="Streamlined Analytics"
-          /></a>
-          <div class="grid-item-text">
-            <a href="streamlined-analytics"
-              ><h2 class="h3">Streamlined Analytics</h2></a
-            >
-            <a href="streamlined-analytics"
-              ><p>Designing and developing a website for a software start-up.</p></a
-            >
-            <a class="btn-text" href="streamlined-analytics">View Project</a>
-          </div>
-        </div> -->
-      </section>
-    </div>
-    <!--
-    <div class="margin-bottom-default margin-top-default p-grid-btns">
-  <a href="gallery"
-        ><button class="button-primary">More Projects</button></a
-      > 
-    </div>
--->
-    <!-- CTA -->
-
-    <section class="section-muted cta margin-top-large margin-bottom-large">
-      <div class="muted-inner fade-in">
-      <h2 class="h1">Let’s Connect!</h2>
-        <p class="lead-text">
-          Feel free to email me at
-          <a class="cta-links" href="mailto:leoj.roberts21@gmail.com"
-            >leoj.roberts21@gmail.com</a
-          >
-          or message me on
-          <a
-            class="cta-links"
-            href="https://www.linkedin.com/in/leoroberts21"
-            target="_blank"
-            >LinkedIn</a
-          >.
-        </p>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-
-    <div class="container">
-      <footer class="fade-in">
-
-        <div class="skill-icons">
+      <!-- PROJECT GRID -->
+<section id="project-grid" class="grid-container" role="main" aria-label="Portfolio projects">
+  
+  <article class="grid-item fade-in">
+    <!-- Project image container -->
+    <a href="cotswold-fine-dining" aria-label="View Cotswolds Fine Dining project">
+      <div class="grid-item-img-container">
         <img
-          src="images/7.JPG"
-          class="self-img margin-bottom-large"
-          alt="Picture of me"
+          class="grid-item-img"
+          src="/thumbnails/cfd-thumbnail.webp"
+          alt="Cotswolds Fine Dining website preview showing luxury catering design"
         />
-
-        <div class="logo-scroller">
-          <div class="scroller-track">
-            <div class="slider-logo-card">
-              <img
-                src="images/skills/Adobe Creative Cloud 1.png"
-                alt="Logo 1"
-              />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/figma-logo.png" alt="Figma" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 4.svg" alt="Joomla" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 5.svg" alt="HTML" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 6.svg" alt="JavaScript" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 7.svg" alt="Bootstrap" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 8.svg" alt="Git" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group-1.svg" alt="Illustrator" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group-2.svg" alt="CSS" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group-3.svg" alt="SCSS" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group.svg" alt="Photoshop" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Vector.svg" alt="Wordpress" />
-            </div>
-            <!-- Duplicate for seamless effect -->
-            <div class="slider-logo-card">
-              <img
-                src="images/skills/Adobe Creative Cloud 1.png"
-                alt="Logo 1"
-              />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 4.svg" alt="Logo 2" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 5.svg" alt="Logo 3" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 6.svg" alt="Logo 4" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 7.svg" alt="Logo 5" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group 8.svg" alt="Logo 5" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group-1.svg" alt="Logo 5" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group-2.svg" alt="Logo 5" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group-3.svg" alt="Logo 5" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Group.svg" alt="Logo 5" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/image 5.svg" alt="Logo 5" />
-            </div>
-            <div class="slider-logo-card">
-              <img src="images/skills/Vector.svg" alt="Logo 5" />
-            </div>
-          </div>
-        </div>
-
       </div>
+      <div class="grid-item-text">
+        <h2 class="h3">Cotswolds Fine Dining </h2>
+        <p>Redesigning a luxury catering website to better reflect its high-end offerings.</p>
+      </div>
+    </a>
+  </article>
 
-        <hr class="smallest-screen-hide" id="footer" />
-        <!-- <div class="row-layout fade-in">
-          <div class="row-left">
-            <p class="h4">Relevant Experience</p>
-            <hr class="smallest-screen-hide hide" />
-          </div>
-          <div class="row-right">
-            <p>
-              <b>Beyond Your Brand</b><br />Junior Web Designer/Developer<br /><span
-                class="text-muted"
-                >2023 - Present</span
-              >
-            </p>
-          </div>
-        </div>
-        <hr class="smallest-screen-hide" />
-        <div class="row-layout fade-in">
-          <div class="row-left">
-            <p class="h4">Education</p>
-            <hr class="smallest-screen-hide hide" />
-          </div>
-          <div class="row-right">
-            <p>
-              <b>Nottingham Trent University</b><br />Graphic Design, BA (Hons),
-              1st Class Honours<br /><span class="text-muted">2019 - 2022</span>
-            </p>
-            <p>
-              <b>Hertford Regional College</b><br />Graphic Design, Level 3
-              Diploma, Distinction<br /><span class="text-muted"
-                >2017 - 2019</span
-              >
-            </p>
-          </div>
-        </div> 
-        <hr class="smallest-screen-hide" /> -->
-        
-        <div class="row-layout fade-in">
-          <div class="row-left">
-            <p class="h4">Contact Me</p>
-          </div>
-          <div class="row-right">
-            <p>
-              <a class="cta-links" href="mailto:leoj.roberts21@gmail.com"
-                >leoj.roberts21@gmail.com</a
-              >
-              <br />
-              <a class="cta-links" href="tel:07539488923">07539488923</a>
-              <br />
-              <a
-                class="cta-links"
-                href="https://www.linkedin.com/in/leoroberts21"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </p>
-          </div>
-        </div>
+  <article class="grid-item fade-in">
+    <a href="calpendo" aria-label="View Calpendo project">
+      <div class="grid-item-img-container">
+        <img
+          class="grid-item-img"
+          src="/thumbnails/calpendo-thumb.webp"
+          alt="Calpendo website preview showing facility management software interface"
+        />
+      </div>
+      <div class="grid-item-text">
+        <h2 class="h3">Calpendo</h2>
+        <p>Enhancing the UX of a facility management software company's website.</p>
+      </div>
+    </a>
+  </article>
 
-        <hr class="smallest-screen-hide" />
-        <hr class="smallest-screen-hide hide" />
-        <div class="row-layout text-meta">
-          <div class="row-left">
-            <p>☺︎ Leo Roberts 2025</p>
-          </div>
-          <div class="row-right">
-            <p><a href="#navbar">Back to top ↑</a></p>
+  <article class="grid-item fade-in">
+    <a href="ocr" aria-label="View OCR Rally project">
+      <div class="grid-item-img-container">
+        <img
+          class="grid-item-img"
+          src="/thumbnails/ocr-thumb.png"
+          alt="OCR Rally website preview showing premium automotive design"
+        />
+      </div>
+      <div class="grid-item-text">
+        <h2 class="h3">OCR Rally </h2>
+        <p>Redesigning a premium automotive site to better reflect quality, trust, and clarity.</p>
+      </div>
+    </a>
+  </article>
+
+  <article class="grid-item fade-in">
+    <a href="oxford-fine-dining" aria-label="View Oxford Fine Dining project">
+      <div class="grid-item-img-container">
+        <img
+          class="grid-item-img"
+          src="/thumbnails/ofd-thumbnail.webp"
+          alt="Oxford Fine Dining website preview showing refined dining design"
+        />
+      </div>
+      <div class="grid-item-text">
+        <h2 class="h3">Oxford Fine Dining </h2>
+        <p>Creating a refined, user-friendly website for a fine dining and catering company.</p>
+      </div>
+    </a>
+  </article>
+
+</section>
+
+
+    <!-- FOOTER -->
+<footer class="footer" role="contentinfo" aria-label="Footer">
+  <hr class="footer-divider">
+  <div class="footer-content">
+    <div class="footer-left">
+      <a href="/" class="footer-logo-link" aria-label="Home">
+        <h1 class="footer-logo">Leo.</h1>
+      </a>
+              </div>
+    <div class="footer-right">
+      <a href="mailto:leoj.roberts21@gmail.com" aria-label="Email me">leoj.roberts21@gmail.com</a>
+      <span>Tel: <a href="tel:+447539488923" aria-label="Call me">07539 488923</a></span>
+      </a>
+      <a href="https://www.linkedin.com/in/leoroberts21" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <button class="linkedin-btn" aria-label="LinkedIn"></button>
+      </a>
           </div>
         </div>
       </footer>
     </div>
+
+    
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
