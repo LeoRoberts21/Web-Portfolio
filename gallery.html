@@ -26,31 +26,31 @@
   </head>
   <body>
     <div class="container">
-      <nav id="navbar" class="navbar">
+      <!-- NAVBAR -->
+      <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
         <div class="navbar-left">
-          <p class="navbar-left-link">
-            <a href="/">
-              <img
-                class="main-logo"
-                src="images/leo-logo.png"
-                alt="main logo"
-              />
-            </a>
-          </p>
+          <a href="/" class="navbar-left-link" aria-label="Home">
+            <h1 class="logo-mark">Leo.</h1>
+          </a>
         </div>
         <div class="navbar-right">
-          <ul class="navbar-right-list">
-             <!-- <li><a href="gallery">Gallery</a></li> -->
-            <li>
-              <a href="https://www.linkedin.com/in/leoroberts21" target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li><a href="#footer">Let's Chat</a></li>
-          </ul>
+          <div class="double-btns">
+         
+            <a href="mailto:leoj.roberts21@gmail.com" aria-label="Email me">leoj.roberts21@gmail.com</a>
+            <span>Tel: <a href="tel:+447539488923" aria-label="Call me">07539 488923</a></span>
+      <!-- iOS-style dark mode toggle -->
+      <label class="ios-toggle" role="switch" aria-label="Toggle dark mode" aria-checked="false">
+        <input type="checkbox" class="ios-toggle-input" aria-hidden="true">
+        <span class="ios-toggle-track">
+          <span class="ios-toggle-thumb"></span>
+        </span>
+      </label>
+          </div>
         </div>
       </nav>
-      <hr class="nav-hr" />
+
+      <!-- NAVBAR DIVIDER -->
+      <hr class="navbar-divider" />
 
       <p style="text-align: center; padding-top: 2rem">
         Here are some examples of my previous work. Some of these were never
