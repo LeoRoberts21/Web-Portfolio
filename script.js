@@ -14,6 +14,18 @@ gsap.registerPlugin(ScrollTrigger);
   }
 })();
 
+document.addEventListener('DOMContentLoaded', function() {
+  var hero = document.querySelector('.hero');
+  if(hero) {
+    hero.classList.add('hero-animate');
+    // Force browser to register transition from hidden state
+    void hero.offsetWidth; // Force reflow
+    setTimeout(function(){
+      hero.classList.remove('hero-animate');
+    }, 10); // timing must allow one paint frame
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   
   document.documentElement.classList.add('gsap-loaded');
@@ -49,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (heroElements.leadText) heroElements.leadText.classList.add('gsap-visible');
         if (heroElements.buttons) heroElements.buttons.classList.add('gsap-visible');
         if (heroElements.banner) heroElements.banner.classList.add('gsap-visible');
+        // forceHeroVisible(); // <<-- Bulletproof visibility after GSAP anim
       }
     });
     
@@ -80,6 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   initHeroAnimation();
+
+
 
   // Scroll animations
   if (document.body.id !== 'p-body') {
@@ -531,7 +546,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         heroElements.banner.classList.add('gsap-visible');
       }
-      
       if (!document.body.hasAttribute('data-hero-animated')) {
         document.body.setAttribute('data-hero-animated', 'true');
       }
@@ -543,7 +557,6 @@ document.addEventListener('DOMContentLoaded', () => {
           clearProps: "transform"
         });
       });
-      
       document.querySelectorAll('.fade-in[data-fade-animated="true"]').forEach(element => {
         gsap.set(element, {
           y: 0,
@@ -551,8 +564,9 @@ document.addEventListener('DOMContentLoaded', () => {
           clearProps: "transform"
         });
       });
-      
       ScrollTrigger.refresh();
+      // <<--- Extra Defensive: Keep hero always visible on resize
+      // forceHeroVisible(); // Removed as per edit hint
     }, 100);
   });
 
@@ -580,3 +594,6 @@ window.addEventListener('wheel', function(e) {
     });
   }
 }, { passive: true });
+
+// 1. Hero Section Defensive Utility: Ensure Always Visible
+// Removed as per edit hint

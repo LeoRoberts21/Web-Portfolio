@@ -4,6 +4,10 @@
 @import "project.css";
 @import url('satoshi.css');
 
+
+/* GSAP */
+
+
 /* ==========================================================================
    CSS VARIABLES
    ============
@@ -989,6 +993,7 @@ a:not(.button-primary):not(.button-secondary):not(.linkedin-text):not(.linkedin-
   width: 100%;
 }
 
+
 /* ==========================================================================
    UTILITIES
    ========================================================================== */
@@ -1041,34 +1046,36 @@ body:not(#p-body) .fade-in {
   transform: none !important;
 } */
 
-/* Hero elements initial state - only on homepage */
+/* HERO - CSS ANIMATION */
 .hero h1,
-.hero .lead-text {
-  opacity: 0;
-  transform: translateY(20px);
+.hero .lead-text,
+.hero .banner,
+.hero .double-btns {
+  opacity: 1;
+  transform: none;
 }
 
-/* Double-btns only hidden on homepage for animation */
-body:not(#p-body) .double-btns {
+.hero.hero-animate h1,
+.hero.hero-animate .lead-text,
+.hero.hero-animate .double-btns,
+.hero.hero-animate .banner {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(30px);
+  animation: fadeUpHero 0.7s ease-out forwards;
 }
 
-/* Ensure dark mode toggle is always visible on project pages */
-#p-body .double-btns {
+@keyframes fadeUpHero {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* REMOVE the old initial hidden styles for hero (overwrite any left) */
+.hero h1,
+.hero .lead-text,
+.banner,
+.double-btns {
   opacity: 1 !important;
-  visibility: visible !important;
   transform: none !important;
-}
-
-  .banner {
-  opacity: 0;
-  transform: scale(0.95);
-}
-
-/* Once GSAP is loaded, these will be animated properly */
-.gsap-loaded .fade-in:not(.hero) {
-  opacity: 0; /* Keep hidden until GSAP animates them */
 }
 
 /* Ensure hero elements maintain final state after animation */
@@ -1098,7 +1105,6 @@ body:not(#p-body) .double-btns.gsap-visible {
   opacity: 1 !important;
   transform: none !important;
 }
-
 /* ==========================================================================
    PROJECT GRID - MODERNIZED & REFINED
    ========================================================================== */
